@@ -1,0 +1,53 @@
+agents:
+  PDM4AR_1:
+    state:
+      x: -6
+      y: -9
+      psi: 1.57
+    color: 'dodgerblue'
+  PDM4AR_2:
+    state:
+      x: 0
+      y: -9
+      psi: 1.57
+    color: 'crimson'
+  PDM4AR_3:
+    state:
+      x: 6
+      y: -9
+      psi: 1.57
+    color: 'gold'
+
+shared_goals:
+  - id: 'goal_1'
+    center: [ -6, 9 ]
+    radius: 0.3
+  - id: 'goal_2'
+    center: [ 0, 9 ]
+    radius: 0.3
+  - id: 'goal_3'
+    center: [ 6, 9 ]
+    radius: 0.3
+  - id: 'goal_4'
+    center: [ -8, 0 ] # A goal tucked in the middle turn
+    radius: 0.3
+
+collection_points:
+  # Agents must retrieve goals from the top and bring them back through the slalom
+  - id: 'collection_1'
+    center: [ 0, -9 ]
+    radius: 1.0
+
+static_obstacles:
+  # Wall 1: Extends from Left boundary towards Right (forcing agents Right)
+  - [ [ -12, -5 ], [ 2, -5 ], [ 2, -3 ], [ -12, -3 ], [ -12, -5 ] ]
+  
+  # Wall 2: Extends from Right boundary towards Left (forcing agents Left)
+  - [ [ -2, 0 ], [ 12, 0 ], [ 12, 2 ], [ -2, 2 ], [ -2, 0 ] ]
+  
+  # Wall 3: Extends from Left boundary towards Right (forcing agents Right again)
+  - [ [ -12, 5 ], [ 2, 5 ], [ 2, 7 ], [ -12, 7 ], [ -12, 5 ] ]
+
+boundary: [ [ -12, -12 ], [ -12, 12 ], [ 12, 12 ], [ 12, -12 ], [ -12, -12 ] ]
+
+seed: 400

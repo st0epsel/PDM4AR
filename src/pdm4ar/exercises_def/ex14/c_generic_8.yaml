@@ -1,0 +1,55 @@
+# c_generated_2.yaml
+agents:
+  PDM4AR_1: {state: {x: -10, y: 0, psi: 0}, color: 'purple'}
+  PDM4AR_2: {state: {x: -10, y: 2, psi: 0}, color: 'cyan'}
+  PDM4AR_3: {state: {x: -10, y: -2, psi: 0}, color: 'magenta'}
+
+shared_goals:
+  - id: 'g1'
+    center: [ -3, 0 ]
+    radius: 0.3
+  - id: 'g2'
+    center: [ 3, 0 ]
+    radius: 0.3
+  - id: 'g3'
+    center: [ 0, 5 ]
+    radius: 0.3
+  - id: 'g4'
+    center: [ 0, -5 ]
+    radius: 0.3
+  - id: 'g5'
+    center: [ 6, 6 ]
+    radius: 0.3
+  - id: 'g6'
+    center: [ 6, -6 ]
+    radius: 0.3
+  - id: 'g7'
+    center: [ -6, 6 ]
+    radius: 0.3
+  - id: 'g8'
+    center: [ -6, -6 ]
+    radius: 0.3
+
+collection_points:
+  - id: 'drop_right'
+    center: [ 10, 0 ]
+    radius: 1.0
+  - id: 'drop_left'
+    center: [ -10, 9 ]
+    radius: 1.0
+
+static_obstacles:
+  # Diamond shapes (Points) spaced out
+  # Center
+  - [[0, 1], [1, 2], [0, 3], [-1, 2], [0, 1]]
+  - [[0, -3], [1, -2], [0, -1], [-1, -2], [0, -3]]
+  # Left Flank
+  - [[-5, 1], [-4, 2], [-5, 3], [-6, 2], [-5, 1]]
+  - [[-5, -3], [-4, -2], [-5, -1], [-6, -2], [-5, -3]]
+  # Right Flank
+  - [[5, 1], [6, 2], [5, 3], [4, 2], [5, 1]]
+  - [[5, -3], [6, -2], [5, -1], [4, -2], [5, -3]]
+
+boundary: [ [ -12, -12 ], [ -12, 12 ], [ 12, 12 ], [ 12, -12 ], [ -12, -12 ] ]
+
+seed: 302

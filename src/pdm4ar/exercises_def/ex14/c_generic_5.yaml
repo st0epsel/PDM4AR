@@ -1,0 +1,46 @@
+agents:
+  PDM4AR_1:
+    state:
+      x: -7
+      y: 7
+      psi: -1.57
+    color: 'blue'
+  PDM4AR_2:
+    state:
+      x: 7
+      y: -7
+      psi: 1.57
+    color: 'red'
+
+shared_goals:
+  - id: 'goal_1'
+    center: [ -7, -7 ] # Bottom-left room
+    radius: 0.3
+  - id: 'goal_2'
+    center: [ 7, 7 ]   # Top-right room
+    radius: 0.3
+  - id: 'goal_3'
+    center: [ -2, 2 ]  # Near center
+    radius: 0.3
+  - id: 'goal_4'
+    center: [ 2, -2 ]  # Near center
+    radius: 0.3
+
+collection_points:
+  - id: 'collection_1'
+    center: [ 0, 0 ]   # Exact center of the cross
+    radius: 1.0
+
+static_obstacles:
+  # Vertical Wall (Top) with gap
+  - [ [ -1, 2 ], [ -1, 10 ], [ 1, 10 ], [ 1, 2 ], [ -1, 2 ] ]
+  # Vertical Wall (Bottom) with gap
+  - [ [ -1, -10 ], [ -1, -2 ], [ 1, -2 ], [ 1, -10 ], [ -1, -10 ] ]
+  # Horizontal Wall (Left) with gap
+  - [ [ -10, -1 ], [ -10, 1 ], [ -2, 1 ], [ -2, -1 ], [ -10, -1 ] ]
+  # Horizontal Wall (Right) with gap
+  - [ [ 2, -1 ], [ 2, 1 ], [ 10, 1 ], [ 10, -1 ], [ 2, -1 ] ]
+
+boundary: [ [ -11, -11 ], [ -11, 11 ], [ 11, 11 ], [ 11, -11 ], [ -11, -11 ] ]
+
+seed: 301

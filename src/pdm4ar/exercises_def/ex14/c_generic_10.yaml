@@ -1,0 +1,50 @@
+# c_generated_4.yaml
+agents:
+  PDM4AR_1: {state: {x: -9, y: -9, psi: 0.78}, color: 'teal'}
+  PDM4AR_2: {state: {x: 9, y: -9, psi: 2.35}, color: 'teal'}
+  PDM4AR_3: {state: {x: 0, y: 9, psi: -1.57}, color: 'teal'}
+  PDM4AR_4: {state: {x: -9, y: 0, psi: 0}, color: 'teal'}
+  PDM4AR_5: {state: {x: 9, y: 0, psi: 3.14}, color: 'teal'}
+
+shared_goals:
+  # Inside the sanctum (Dense)
+  - id: 'inner_1'
+    center: [ -2, -2 ]
+    radius: 0.3
+  - id: 'inner_2'
+    center: [ 2, -2 ]
+    radius: 0.3
+  - id: 'inner_3'
+    center: [ -2, 2 ]
+    radius: 0.3
+  - id: 'inner_4'
+    center: [ 2, 2 ]
+    radius: 0.3
+  # Outside bait
+  - id: 'outer_1'
+    center: [ -8, 8 ]
+    radius: 0.3
+  - id: 'outer_2'
+    center: [ 8, 8 ]
+    radius: 0.3
+
+collection_points:
+  - id: 'drop_main'
+    center: [ 0, -8 ]
+    radius: 1.0
+
+static_obstacles:
+  # The Box (-5 to 5), opening at Top (y=5)
+  # Left wall
+  - [[-5, -5], [-4, -5], [-4, 5], [-5, 5], [-5, -5]]
+  # Right wall
+  - [[4, -5], [5, -5], [5, 5], [4, 5], [4, -5]]
+  # Bottom wall
+  - [[-5, -5], [5, -5], [5, -4], [-5, -4], [-5, -5]]
+  # Top walls (leaving gap -1 to 1)
+  - [[-5, 4], [-1.5, 4], [-1.5, 5], [-5, 5], [-5, 4]]
+  - [[1.5, 4], [5, 4], [5, 5], [1.5, 5], [1.5, 4]]
+
+boundary: [ [ -12, -12 ], [ -12, 12 ], [ 12, 12 ], [ 12, -12 ], [ -12, -12 ] ]
+
+seed: 302

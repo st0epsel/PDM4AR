@@ -1,0 +1,60 @@
+agents:
+  PDM4AR_1:
+    state:
+      x: -8
+      y: 8
+      psi: 0
+    color: 'teal'
+  PDM4AR_2:
+    state:
+      x: 8
+      y: -8
+      psi: 3.14
+    color: 'purple'
+
+shared_goals:
+  - id: 'goal_1'
+    center: [ -8, 2 ]
+    radius: 0.3
+  - id: 'goal_2'
+    center: [ -8, -2 ]
+    radius: 0.3
+  - id: 'goal_3'
+    center: [ 8, 2 ]
+    radius: 0.3
+  - id: 'goal_4'
+    center: [ 8, -2 ]
+    radius: 0.3
+  - id: 'goal_5'
+    center: [ 0, 9 ]
+    radius: 0.3
+  - id: 'goal_6'
+    center: [ 0, -9 ]
+    radius: 0.3
+
+# Collection points are in the central vertical corridor
+collection_points:
+  - id: 'collection_1'
+    center: [ 0, 0 ]
+    radius: 1.0
+  - id: 'collection_2'
+    center: [ 0, 5 ]
+    radius: 1.0
+
+# Long walls creating a corridor down the middle (x=0)
+static_obstacles:
+  # Left Wall Top
+  - [ [ -4, 1 ], [ -4, 8 ], [ -2, 8 ], [ -2, 1 ], [ -4, 1 ] ]
+  # Left Wall Bottom
+  - [ [ -4, -8 ], [ -4, -1 ], [ -2, -1 ], [ -2, -8 ], [ -4, -8 ] ]
+  # Right Wall Top
+  - [ [ 2, 1 ], [ 2, 8 ], [ 4, 8 ], [ 4, 1 ], [ 2, 1 ] ]
+  # Right Wall Bottom
+  - [ [ 2, -8 ], [ 2, -1 ], [ 4, -1 ], [ 4, -8 ], [ 2, -8 ] ]
+  # Obstacle blocking direct diagonal movement
+  - [ [ -7, -5 ], [ -6, -4 ], [ -5, -5 ], [ -6, -6 ], [ -7, -5 ] ]
+  - [ [ 5, 5 ], [ 6, 6 ], [ 7, 5 ], [ 6, 4 ], [ 5, 5 ] ]
+
+boundary: [ [ -10, -10 ], [ -10, 10 ], [ 10, 10 ], [ 10, -10 ], [ -10, -10 ] ]
+
+seed: 101

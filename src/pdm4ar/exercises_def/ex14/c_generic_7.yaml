@@ -1,0 +1,69 @@
+agents:
+  PDM4AR_1:
+    state: {x: -8, y: -8, psi: 1.57}
+    color: 'red'
+  PDM4AR_2:
+    state: {x: 8, y: -8, psi: 1.57}
+    color: 'blue'
+  PDM4AR_3:
+    state: {x: -8, y: 8, psi: -1.57}
+    color: 'green'
+  PDM4AR_4:
+    state: {x: 8, y: 8, psi: -1.57}
+    color: 'orange'
+
+shared_goals:
+  # Quadrant 1 (Top Right)
+  - id: 'goal_1'
+    center: [ 7, 7 ]
+    radius: 0.3
+  - id: 'goal_2'
+    center: [ 9, 9 ]
+    radius: 0.3
+  # Quadrant 2 (Top Left)
+  - id: 'goal_3'
+    center: [ -7, 7 ]
+    radius: 0.3
+  - id: 'goal_4'
+    center: [ -9, 9 ]
+    radius: 0.3
+  # Quadrant 3 (Bottom Left)
+  - id: 'goal_5'
+    center: [ -7, -7 ]
+    radius: 0.3
+  - id: 'goal_6'
+    center: [ -9, -9 ]
+    radius: 0.3
+  # Quadrant 4 (Bottom Right)
+  - id: 'goal_7'
+    center: [ 7, -7 ]
+    radius: 0.3
+  - id: 'goal_8'
+    center: [ 9, -9 ]
+    radius: 0.3
+
+collection_points:
+  # Central Hub
+  - id: 'collection_1'
+    center: [ 0, 0 ]
+    radius: 1.0
+  # Perimeter backups
+  - id: 'collection_2'
+    center: [ -3, 9 ]
+    radius: 1.0
+  - id: 'collection_3'
+    center: [ 3, -9 ]
+    radius: 1.0
+
+static_obstacles:
+  # Vertical Central Wall (Split top/bottom with gap in middle)
+  - [[-0.5, 2], [0.5, 2], [0.5, 11], [-0.5, 11], [-0.5, 2]]
+  - [[-0.5, -11], [0.5, -11], [0.5, -2], [-0.5, -2], [-0.5, -11]]
+  
+  # Horizontal Central Wall (Split left/right with gap in middle)
+  - [[2, -0.5], [11, -0.5], [11, 0.5], [2, 0.5], [2, -0.5]]
+  - [[-11, -0.5], [-2, -0.5], [-2, 0.5], [-11, 0.5], [-11, -0.5]]
+
+boundary: [ [ -12, -12 ], [ -12, 12 ], [ 12, 12 ], [ 12, -12 ], [ -12, -12 ] ]
+
+seed: 302

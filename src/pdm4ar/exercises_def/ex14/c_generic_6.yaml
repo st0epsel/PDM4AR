@@ -1,0 +1,45 @@
+agents:
+  PDM4AR_1:
+    state:
+      x: 0
+      y: 0
+      psi: 1.57
+    color: 'magenta'
+  PDM4AR_2:
+    state:
+      x: 0
+      y: -2
+      psi: 1.57
+    color: 'cyan'
+
+shared_goals:
+  - id: 'goal_1'
+    center: [ 0, 8 ]
+    radius: 0.3
+  - id: 'goal_2'
+    center: [ -2, 8 ]
+    radius: 0.3
+  - id: 'goal_3'
+    center: [ 2, 8 ]
+    radius: 0.3
+
+collection_points:
+  - id: 'collection_1'
+    center: [ 0, -8 ]
+    radius: 1.0
+
+static_obstacles:
+  # The "U" shape trap (composed of 3 rectangles)
+  
+  # Bottom horizontal bar of the U (blocking direct path up)
+  - [ [ -6, 2 ], [ 6, 2 ], [ 6, 4 ], [ -6, 4 ], [ -6, 2 ] ]
+  
+  # Left vertical arm
+  - [ [ -6, 2 ], [ -4, 2 ], [ -4, 7 ], [ -6, 7 ], [ -6, 2 ] ]
+  
+  # Right vertical arm
+  - [ [ 4, 2 ], [ 6, 2 ], [ 6, 7 ], [ 4, 7 ], [ 4, 2 ] ]
+
+boundary: [ [ -12, -12 ], [ -12, 12 ], [ 12, 12 ], [ 12, -12 ], [ -12, -12 ] ]
+
+seed: 302

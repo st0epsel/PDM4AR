@@ -1,0 +1,50 @@
+# c_generated_3.yaml
+agents:
+  PDM4AR_1: {state: {x: -9, y: 0, psi: 0}, color: 'yellow'}
+  PDM4AR_2: {state: {x: -7, y: 0, psi: 0}, color: 'yellow'}
+  PDM4AR_3: {state: {x: 9, y: 0, psi: 3.14}, color: 'red'}
+  PDM4AR_4: {state: {x: 7, y: 0, psi: 3.14}, color: 'red'}
+
+shared_goals:
+  # Top Corridor
+  - id: 'g_top_1'
+    center: [ -9, 7 ]
+    radius: 0.3
+  - id: 'g_top_2'
+    center: [ 0, 7 ]
+    radius: 0.3
+  - id: 'g_top_3'
+    center: [ 9, 7 ]
+    radius: 0.3
+  # Bottom Corridor
+  - id: 'g_bot_1'
+    center: [ -9, -7 ]
+    radius: 0.3
+  - id: 'g_bot_2'
+    center: [ 0, -7 ]
+    radius: 0.3
+  - id: 'g_bot_3'
+    center: [ 9, -7 ]
+    radius: 0.3
+
+collection_points:
+  # Center Corridor ends
+  - id: 'drop_west'
+    center: [ -10, 0 ]
+    radius: 1.0
+  - id: 'drop_east'
+    center: [ 10, 0 ]
+    radius: 1.0
+
+static_obstacles:
+  # Upper Wall (y=3 to y=4)
+  - [[-9, 3], [9, 3], [9, 4], [-9, 4], [-9, 3]]
+  # Lower Wall (y=-4 to y=-3)
+  - [[-9, -4], [9, -4], [9, -3], [-9, -3], [-9, -4]]
+  # Small baffles in top/bottom to prevent straight line speeding
+  - [[-2, 4], [-1, 4], [-1, 6], [-2, 6], [-2, 4]]
+  - [[1, -6], [2, -6], [2, -4], [1, -4], [1, -6]]
+
+boundary: [ [ -12, -12 ], [ -12, 12 ], [ 12, 12 ], [ 12, -12 ], [ -12, -12 ] ]
+
+seed: 302
