@@ -1,0 +1,704 @@
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript"
+        src="index.html_resources/static/jquery/jquery.js"></script>
+
+    <!-- Use imagezoom plugin -->
+    <script type="text/javascript"
+        src="index.html_resources/static/jquery/jquery.imageZoom.js"></script>
+    <link rel="stylesheet"
+          href="index.html_resources/static/jquery/jquery.imageZoom.css"/>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('.zoomable').imageZoom();
+        });
+    </script>
+
+
+    <!-- Use tablesorter plugin -->
+    <script type="text/javascript"
+            src="index.html_resources/static/jquery/tablesorter/jquery.tablesorter.js"></script>
+    <link rel="stylesheet"
+          href="index.html_resources/static/jquery/tablesorter/themes/blue/style.css"/>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".tablesorter").tablesorter();
+    }
+    );
+    </script>
+    
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: {
+            equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"]
+        },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/SVG"], //" "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$']],
+          displayMath: [ ['$$','$$'] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+      //MathJax.Ajax.loadComplete("/media/tex/symbols.js");
+    </script>
+
+    <script type='text/javascript'
+            src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+
+
+
+    <style type="text/css">
+    /* Extra CSS passed by user. */
+        
+    </style>
+
+
+    <link rel="stylesheet"
+          href="index.html_resources/static/reprep/default_style.css"/>
+
+    <title> Evaluation </title>
+<body>
+
+<p id="reprep-head">
+    Report created on 2026-01-09-19:21:07
+    by <a href="http://purl.org/censi/2010/RepRep">RepRep</a>.
+    Show:
+    <input type="submit" name="datanode_toggle"
+           value="data nodes" id="datanode_toggle" />
+</p>
+
+
+
+<script type="text/javascript">
+ $(document).ready(function() {
+   $('.datanode').hide();
+   $('#datanode_toggle').click(function(){
+     $('.datanode').toggle();
+   });
+ });
+</script>
+
+
+
+    <div class='report-node' id="Evaluation">
+    <h><a href="#Evaluation">Evaluation</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Evaluated </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Test cases completion ratio:
+	(6/6)</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> OverallPerformance </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">AggregatedPerformanceRes(n_test_cases=6,
+                         n_completed_test_cases=6,
+                         exceptions=[],
+                         failed_test_id=[],
+                         perf_res=DubinsFinalPerformance(accuracy_combined=1.0,
+                                                         individual_accuracies={&apos;accuracy_dubins&apos;: 1.0,
+                                                                                &apos;accuracy_radius&apos;: 1.0,
+                                                                                &apos;accuracy_reeds&apos;: 1.0,
+                                                                                &apos;accuracy_spline&apos;: 1.0,
+                                                                                &apos;accuracy_tangents&apos;: 1.0,
+                                                                                &apos;accuracy_turning&apos;: 1.0}))</pre>
+               </div>
+
+            </div>
+            
+    <div class='report-node' id="Evaluation-Radius Computation Test">
+    <h><a href="#Evaluation-Radius Computation Test">Radius Computation Test</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (4, 0.7853981633974483) 
+Computed: 	 DubinsParam(min_radius=4.000000000000001) 
+Expected: 	 DubinsParam(min_radius=4.000000000000001) 
+PASSED</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> ResultsInfo </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">You got  1.000/1 correct results!</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Turning Circle Test">
+    <h><a href="#Evaluation-Turning Circle Test">Turning Circle Test</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([1.0, 2.5],0.0), 3) 
+Computed: 	 TurningCircle(left=L(0.0), right=R(0.0)) 
+Expected: 	 TurningCircle(left=L(0.0), right=R(0.0)) 
+PASSED</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> ResultsInfo </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">You got  1.000/1 correct results!</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Tangent Construction Test">
+    <h><a href="#Evaluation-Tangent Construction Test">Tangent Construction Test</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (L(0.0), R(0.0)) 
+Computed: 	 [S(3.0)] 
+Expected: 	 [S(3.0)] 
+PASSED</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Tangent Construction Test-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Tangent-Construction-Test-figure1-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Tangent-Construction-Test-figure1-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Tangent-Construction-Test-figure1-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Tangent-Construction-Test-figure1-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Tangent-Construction-Test-figure1-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (R(0.0), R(0.0)) 
+Computed: 	 [S(5.0)] 
+Expected: 	 [S(5.0)] 
+PASSED</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Tangent Construction Test-figure2'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Tangent-Construction-Test-figure2-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Tangent-Construction-Test-figure2-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Tangent-Construction-Test-figure2-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Tangent-Construction-Test-figure2-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Tangent-Construction-Test-figure2-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 3 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (L(0.0), R(0.0)) 
+Computed: 	 [] 
+Expected: 	 [] 
+PASSED</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Tangent Construction Test-figure3'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Tangent-Construction-Test-figure3-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Tangent-Construction-Test-figure3-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Tangent-Construction-Test-figure3-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Tangent-Construction-Test-figure3-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Tangent-Construction-Test-figure3-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> ResultsInfo </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">You got  3.000/3 correct results!</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Dubins' Path Test">
+    <h><a href="#Evaluation-Dubins' Path Test">Dubins' Path Test</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([1.0, 2.5],315.0), SE2Transform([12.0, 1.0],300.0), 3.5) 
+Computed: 	 [L(60.7), S(3.7), R(75.7)] 
+Expected: 	 [L(60.7), S(3.7), R(75.7)] 
+Path is a valid dubins path
+Path is an optimal dubins path 
+ PASSED 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Dubins' Path Test-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure1-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Dubins'-Path-Test-figure1-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure1-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure1-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure1-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([0.0, 0.0],0.0), SE2Transform([0.0, 7.0],180.0), 3.5) 
+Computed: 	 [R(0.0), S(0.0), L(180.0)] 
+Expected one of: 	 [L(180.0), S(0.0), R(0.0)], [R(0.0), S(0.0), L(180.0)], [R(0.0), L(180.0), R(0.0)], [R(0.0), L(180.0), R(0.0)],  
+Path is a valid dubins path
+Path is an optimal dubins path 
+ PASSED 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Dubins' Path Test-figure2'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure2-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Dubins'-Path-Test-figure2-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure2-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure2-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure2-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 3 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([0.0, 0.0],330.0), SE2Transform([8.0, 4.0],300.0), 3.5) 
+Computed: 	 [L(46.3), S(9.7), L(283.7)] 
+Expected: 	 [L(46.3), S(9.7), L(283.7)] 
+Path is a valid dubins path
+Path is an optimal dubins path 
+ PASSED 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Dubins' Path Test-figure3'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure3-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Dubins'-Path-Test-figure3-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure3-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure3-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure3-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 4 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([0.0, 0.0],90.0), SE2Transform([7.0, 0.0],90.0), 3.5) 
+Computed: 	 [L(270.0), S(7.0), L(90.0)] 
+Expected one of: 	 [L(270.0), S(7.0), L(90.0)], [R(90.0), S(7.0), R(270.0)],  
+Path is a valid dubins path
+Path is an optimal dubins path 
+ PASSED 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Dubins' Path Test-figure4'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure4-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Dubins'-Path-Test-figure4-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure4-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure4-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Dubins'-Path-Test-figure4-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> ResultsInfo </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">You got  4.000/4 correct results!</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Spline vs Dubins Comparison">
+    <h><a href="#Evaluation-Spline vs Dubins Comparison">Spline vs Dubins Comparison</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([0.0, 0.0],30.0), SE2Transform([8.0, 4.0],-90.0), 3.5) 
+Computed: 	 [19.15320141496683, 10.124707506213065, False, array([7.74596669, 4.47213595]), array([ 5.47678698e-16, -8.94427191e+00]), array([0., 0.]), array([8., 4.])] 
+Expected: 	 [19.15320141496683, 10.124700437423485, False, array([7.74596669, 4.47213595]), array([ 5.47678698e-16, -8.94427191e+00]), array([0., 0.]), array([8., 4.])] 
+PASSED</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Spline vs Dubins Comparison-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure1-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure1-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure1-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure1-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure1-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([0.0, 0.0],0.0), SE2Transform([10.0, 2.0],22.5), 3.5) 
+Computed: 	 [10.206854421640074, 10.262851663265847, True, array([10.19803903,  0.        ]), array([9.42175953, 3.90262058]), array([0., 0.]), array([10.,  2.])] 
+Expected: 	 [10.206854421640076, 10.2628515293458, True, array([10.19803903,  0.        ]), array([9.42175953, 3.90262058]), array([0., 0.]), array([10.,  2.])] 
+PASSED</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Spline vs Dubins Comparison-figure2'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure2-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure2-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure2-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure2-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure2-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 3 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([-3.0, 7.0],189.0), SE2Transform([-4.0, 2.5],329.4), 3.5) 
+Computed: 	 [22.432440450509315, 5.391124362664825, False, array([-4.55301828, -0.72112725]), array([ 3.96782469, -2.34656498]), array([-3.,  7.]), array([-4. ,  2.5])] 
+Expected: 	 [22.43244045050932, 5.391121436181324, False, array([-4.55301828, -0.72112725]), array([ 3.96782469, -2.34656498]), array([-3.,  7.]), array([-4. ,  2.5])] 
+PASSED</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Spline vs Dubins Comparison-figure3'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure3-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure3-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure3-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure3-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure3-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 4 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([0.0, 0.0],90.0), SE2Transform([3.0, 7.0],90.0), 3.5) 
+Computed: 	 [7.727528688112955, 7.734782511580244, False, array([4.66331608e-16, 7.61577311e+00]), array([4.66331608e-16, 7.61577311e+00]), array([0., 0.]), array([3., 7.])] 
+Expected: 	 [7.727528688112955, 7.7347812843203965, False, array([4.66331608e-16, 7.61577311e+00]), array([4.66331608e-16, 7.61577311e+00]), array([0., 0.]), array([3., 7.])] 
+PASSED</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Spline vs Dubins Comparison-figure4'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure4-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure4-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure4-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure4-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Spline-vs-Dubins-Comparison-figure4-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> ResultsInfo </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">You got  4.000/4 correct results!</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Reeds' Path Test">
+    <h><a href="#Evaluation-Reeds' Path Test">Reeds' Path Test</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([1.0, 2.5],0.0), SE2Transform([-8.0, 2.5],0.0), 3.5) 
+Computed: 	 [L-(0.0), S-(9.0), R-(0.0)] 
+Expected one of: 	 [L-(0.0), S-(9.0), L-(0.0)], [L-(0.0), S-(9.0), R-(0.0)], [R-(0.0), S-(9.0), L-(0.0)], [R-(0.0), S-(9.0), R-(0.0)],  
+Path is a valid dubins path
+Path is an optimal dubins path 
+ PASSED 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Reeds' Path Test-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure1-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Reeds'-Path-Test-figure1-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure1-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure1-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure1-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([0.0, 0.0],30.0), SE2Transform([8.0, 4.0],270.0), 3.5) 
+Computed: 	 [L(82.6), R(216.8), L(14.2)] 
+Expected: 	 [L(82.6), R(216.8), L(14.2)] 
+Path is a valid dubins path
+Path is an optimal dubins path 
+ PASSED 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Reeds' Path Test-figure2'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure2-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Reeds'-Path-Test-figure2-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure2-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure2-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure2-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 3 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([0.0, 0.0],90.0), SE2Transform([-7.0, 0.0],-90.0), 3.5) 
+Computed: 	 [L-(0.0), S-(0.0), L-(180.0)] 
+Expected one of: 	 [L(180.0), S(0.0), R(0.0)], [R(0.0), S(0.0), L(180.0)], [R(0.0), L(180.0), R(0.0)], [R(0.0), L(180.0), R(0.0)], [L-(180.0), S-(0.0), R-(0.0)], [R-(0.0), S-(0.0), L-(180.0)], [R-(0.0), L-(180.0), R-(0.0)], [R-(0.0), L-(180.0), R-(0.0)],  
+Path is a valid dubins path
+Path is an optimal dubins path 
+ PASSED 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Reeds' Path Test-figure3'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure3-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Reeds'-Path-Test-figure3-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure3-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure3-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure3-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Query: 4 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Input: 	 (SE2Transform([-3.0, 7.0],189.0), SE2Transform([-4.0, 2.5],329.4), 3.5) 
+Computed: 	 [R-(16.4), L-(253.8), R-(17.8)] 
+Expected: 	 [R-(16.4), L-(253.8), R-(17.8)] 
+Path is a valid dubins path
+Path is an optimal dubins path 
+ PASSED 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Reeds' Path Test-figure4'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure4-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Reeds'-Path-Test-figure4-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure4-Graph.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure4-Graph.pdf">Graph</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Reeds'-Path-Test-figure4-Graph.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> ResultsInfo </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">You got  4.000/4 correct results!</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+</div>
+</section> 
+</div> 
+
+
+
+
+</body>
+</html>

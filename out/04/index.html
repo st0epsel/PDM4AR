@@ -1,0 +1,861 @@
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript"
+        src="index.html_resources/static/jquery/jquery.js"></script>
+
+    <!-- Use imagezoom plugin -->
+    <script type="text/javascript"
+        src="index.html_resources/static/jquery/jquery.imageZoom.js"></script>
+    <link rel="stylesheet"
+          href="index.html_resources/static/jquery/jquery.imageZoom.css"/>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('.zoomable').imageZoom();
+        });
+    </script>
+
+
+    <!-- Use tablesorter plugin -->
+    <script type="text/javascript"
+            src="index.html_resources/static/jquery/tablesorter/jquery.tablesorter.js"></script>
+    <link rel="stylesheet"
+          href="index.html_resources/static/jquery/tablesorter/themes/blue/style.css"/>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".tablesorter").tablesorter();
+    }
+    );
+    </script>
+    
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: {
+            equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"]
+        },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/SVG"], //" "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$']],
+          displayMath: [ ['$$','$$'] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+      //MathJax.Ajax.loadComplete("/media/tex/symbols.js");
+    </script>
+
+    <script type='text/javascript'
+            src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+
+
+
+    <style type="text/css">
+    /* Extra CSS passed by user. */
+        
+    </style>
+
+
+    <link rel="stylesheet"
+          href="index.html_resources/static/reprep/default_style.css"/>
+
+    <title> Evaluation </title>
+<body>
+
+<p id="reprep-head">
+    Report created on 2026-01-09-19:20:21
+    by <a href="http://purl.org/censi/2010/RepRep">RepRep</a>.
+    Show:
+    <input type="submit" name="datanode_toggle"
+           value="data nodes" id="datanode_toggle" />
+</p>
+
+
+
+<script type="text/javascript">
+ $(document).ready(function() {
+   $('.datanode').hide();
+   $('#datanode_toggle').click(function(){
+     $('.datanode').toggle();
+   });
+ });
+</script>
+
+
+
+    <div class='report-node' id="Evaluation">
+    <h><a href="#Evaluation">Evaluation</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Evaluated </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Test cases completion ratio:
+	(21/21)</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> OverallPerformance </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">AggregatedPerformanceRes(n_test_cases=21,
+                         n_completed_test_cases=21,
+                         exceptions=[],
+                         failed_test_id=[],
+                         perf_res=Ex04PerformanceResult(value_iteration=Ex04Performance(policy_accuracy=0.98,
+                                                                                        value_func_r2=1.0,
+                                                                                        solve_time=0.511),
+                                                        policy_iteration=Ex04Performance(policy_accuracy=0.98,
+                                                                                         value_func_r2=1.0,
+                                                                                         solve_time=1.261),
+                                                        transition_prob=Ex04TransitionProbPerformance(transition_prob_accuracy=1.0)))</pre>
+               </div>
+
+            </div>
+            
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb0_s(2, 2)_aNORTH_ns(1, 2)">
+    <h><a href="#Evaluation-Ex4-TransitionProb0_s(2, 2)_aNORTH_ns(1, 2)">Ex4-TransitionProb0_s(2, 2)_aNORTH_ns(1, 2)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb0_s(2, 2)_aNORTH_ns(1, 2) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 2), Action: NORTH, Next State: (1, 2)
+Expected probability: 0.75
+Computed probability: 0.750000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb1_s(2, 2)_aSOUTH_ns(3, 2)">
+    <h><a href="#Evaluation-Ex4-TransitionProb1_s(2, 2)_aSOUTH_ns(3, 2)">Ex4-TransitionProb1_s(2, 2)_aSOUTH_ns(3, 2)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb1_s(2, 2)_aSOUTH_ns(3, 2) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 2), Action: SOUTH, Next State: (3, 2)
+Expected probability: 0.75
+Computed probability: 0.750000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb2_s(2, 2)_aEAST_ns(2, 3)">
+    <h><a href="#Evaluation-Ex4-TransitionProb2_s(2, 2)_aEAST_ns(2, 3)">Ex4-TransitionProb2_s(2, 2)_aEAST_ns(2, 3)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb2_s(2, 2)_aEAST_ns(2, 3) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 2), Action: EAST, Next State: (2, 3)
+Expected probability: 0.75
+Computed probability: 0.750000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb3_s(2, 2)_aWEST_ns(2, 1)">
+    <h><a href="#Evaluation-Ex4-TransitionProb3_s(2, 2)_aWEST_ns(2, 1)">Ex4-TransitionProb3_s(2, 2)_aWEST_ns(2, 1)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb3_s(2, 2)_aWEST_ns(2, 1) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 2), Action: WEST, Next State: (2, 1)
+Expected probability: 0.75
+Computed probability: 0.750000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb4_s(2, 2)_aEAST_ns(1, 3)">
+    <h><a href="#Evaluation-Ex4-TransitionProb4_s(2, 2)_aEAST_ns(1, 3)">Ex4-TransitionProb4_s(2, 2)_aEAST_ns(1, 3)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb4_s(2, 2)_aEAST_ns(1, 3) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 2), Action: EAST, Next State: (1, 3)
+Expected probability: 0.0
+Computed probability: 0.000000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb5_s(2, 1)_aSOUTH_ns(3, 1)">
+    <h><a href="#Evaluation-Ex4-TransitionProb5_s(2, 1)_aSOUTH_ns(3, 1)">Ex4-TransitionProb5_s(2, 1)_aSOUTH_ns(3, 1)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb5_s(2, 1)_aSOUTH_ns(3, 1) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 1), Action: SOUTH, Next State: (3, 1)
+Expected probability: 0.75
+Computed probability: 0.750000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb6_s(2, 1)_aEAST_ns(2, 2)">
+    <h><a href="#Evaluation-Ex4-TransitionProb6_s(2, 1)_aEAST_ns(2, 2)">Ex4-TransitionProb6_s(2, 1)_aEAST_ns(2, 2)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb6_s(2, 1)_aEAST_ns(2, 2) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 1), Action: EAST, Next State: (2, 2)
+Expected probability: 0.75
+Computed probability: 0.750000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb7_s(2, 1)_aWEST_ns(2, 0)">
+    <h><a href="#Evaluation-Ex4-TransitionProb7_s(2, 1)_aWEST_ns(2, 0)">Ex4-TransitionProb7_s(2, 1)_aWEST_ns(2, 0)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb7_s(2, 1)_aWEST_ns(2, 0) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 1), Action: WEST, Next State: (2, 0)
+Expected probability: 0.75
+Computed probability: 0.750000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb8_s(2, 1)_aABANDON_ns(2, 2)">
+    <h><a href="#Evaluation-Ex4-TransitionProb8_s(2, 1)_aABANDON_ns(2, 2)">Ex4-TransitionProb8_s(2, 1)_aABANDON_ns(2, 2)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb8_s(2, 1)_aABANDON_ns(2, 2) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 1), Action: ABANDON, Next State: (2, 2)
+Expected probability: 1.0
+Computed probability: 1.000000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb9_s(2, 2)_aNORTH_ns(2, 3)">
+    <h><a href="#Evaluation-Ex4-TransitionProb9_s(2, 2)_aNORTH_ns(2, 3)">Ex4-TransitionProb9_s(2, 2)_aNORTH_ns(2, 3)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb9_s(2, 2)_aNORTH_ns(2, 3) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 2), Action: NORTH, Next State: (2, 3)
+Expected probability: 0.08333333333333333
+Computed probability: 0.083333
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb10_s(2, 2)_aEAST_ns(1, 2)">
+    <h><a href="#Evaluation-Ex4-TransitionProb10_s(2, 2)_aEAST_ns(1, 2)">Ex4-TransitionProb10_s(2, 2)_aEAST_ns(1, 2)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb10_s(2, 2)_aEAST_ns(1, 2) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 2), Action: EAST, Next State: (1, 2)
+Expected probability: 0.08333333333333333
+Computed probability: 0.083333
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb11_s(1, 2)_aSOUTH_ns(2, 2)">
+    <h><a href="#Evaluation-Ex4-TransitionProb11_s(1, 2)_aSOUTH_ns(2, 2)">Ex4-TransitionProb11_s(1, 2)_aSOUTH_ns(2, 2)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb11_s(1, 2)_aSOUTH_ns(2, 2) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (1, 2), Action: SOUTH, Next State: (2, 2)
+Expected probability: 0.75
+Computed probability: 0.750000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb12_s(3, 2)_aNORTH_ns(2, 2)">
+    <h><a href="#Evaluation-Ex4-TransitionProb12_s(3, 2)_aNORTH_ns(2, 2)">Ex4-TransitionProb12_s(3, 2)_aNORTH_ns(2, 2)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb12_s(3, 2)_aNORTH_ns(2, 2) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (3, 2), Action: NORTH, Next State: (2, 2)
+Expected probability: 0.75
+Computed probability: 0.750000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb13_s(2, 0)_aNORTH_ns(1, 1)">
+    <h><a href="#Evaluation-Ex4-TransitionProb13_s(2, 0)_aNORTH_ns(1, 1)">Ex4-TransitionProb13_s(2, 0)_aNORTH_ns(1, 1)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb13_s(2, 0)_aNORTH_ns(1, 1) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 0), Action: NORTH, Next State: (1, 1)
+Expected probability: 0.25
+Computed probability: 0.250000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-TransitionProb14_s(2, 4)_aSTAY_ns(2, 4)">
+    <h><a href="#Evaluation-Ex4-TransitionProb14_s(2, 4)_aSTAY_ns(2, 4)">Ex4-TransitionProb14_s(2, 4)_aSTAY_ns(2, 4)</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> TransitionProb14_s(2, 4)_aSTAY_ns(2, 4) </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">State: (2, 4), Action: STAY, Next State: (2, 4)
+Expected probability: 1.0
+Computed probability: 1.000000
+Accuracy: 1.0
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-ValueIteration0">
+    <h><a href="#Evaluation-Ex4-ValueIteration0">Ex4-ValueIteration0</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Ex4-ValueIteration0-figure1'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure1-ValueIteration0-value.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-ValueIteration0-figure1-ValueIteration0-value.png"/>
+                    </a>
+                <p class="report-subfigure-caption">ValueIteration0-value</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure1-ValueIteration0-value.pdf"> main </a></p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure1-ValueIteration0-policy.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-ValueIteration0-figure1-ValueIteration0-policy.png"/>
+                    </a>
+                <p class="report-subfigure-caption">ValueIteration0-policy</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure1-ValueIteration0-policy.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure1-ValueIteration0-value.pdf">ValueIteration0-value</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure1-ValueIteration0-value.png">png</a>:  image/png</p>
+</div>
+</div>
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure1-ValueIteration0-policy.pdf">ValueIteration0-policy</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure1-ValueIteration0-policy.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div><div style="clear:left" class='report-figure None' id='Evaluation-Ex4-ValueIteration0-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure2-GroundTruth-value.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-ValueIteration0-figure2-GroundTruth-value.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth-value</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure2-GroundTruth-value.pdf"> main </a></p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure2-GroundTruth-policy.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-ValueIteration0-figure2-GroundTruth-policy.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth-policy</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure2-GroundTruth-policy.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure2-GroundTruth-value.pdf">GroundTruth-value</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure2-GroundTruth-value.png">png</a>:  image/png</p>
+</div>
+</div>
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure2-GroundTruth-policy.pdf">GroundTruth-policy</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration0-figure2-GroundTruth-policy.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> ValueIteration0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">policy_accuracy: 0.9411764705882353
+value_func_r2:1.000
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-ValueIteration1">
+    <h><a href="#Evaluation-Ex4-ValueIteration1">Ex4-ValueIteration1</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Ex4-ValueIteration1-figure1'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure1-ValueIteration1-value.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-ValueIteration1-figure1-ValueIteration1-value.png"/>
+                    </a>
+                <p class="report-subfigure-caption">ValueIteration1-value</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure1-ValueIteration1-value.pdf"> main </a></p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure1-ValueIteration1-policy.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-ValueIteration1-figure1-ValueIteration1-policy.png"/>
+                    </a>
+                <p class="report-subfigure-caption">ValueIteration1-policy</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure1-ValueIteration1-policy.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure1-ValueIteration1-value.pdf">ValueIteration1-value</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure1-ValueIteration1-value.png">png</a>:  image/png</p>
+</div>
+</div>
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure1-ValueIteration1-policy.pdf">ValueIteration1-policy</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure1-ValueIteration1-policy.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div><div style="clear:left" class='report-figure None' id='Evaluation-Ex4-ValueIteration1-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure2-GroundTruth-value.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-ValueIteration1-figure2-GroundTruth-value.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth-value</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure2-GroundTruth-value.pdf"> main </a></p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure2-GroundTruth-policy.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-ValueIteration1-figure2-GroundTruth-policy.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth-policy</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure2-GroundTruth-policy.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure2-GroundTruth-value.pdf">GroundTruth-value</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure2-GroundTruth-value.png">png</a>:  image/png</p>
+</div>
+</div>
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure2-GroundTruth-policy.pdf">GroundTruth-policy</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration1-figure2-GroundTruth-policy.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> ValueIteration1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">policy_accuracy: 1.0
+value_func_r2:1.000
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-ValueIteration2">
+    <h><a href="#Evaluation-Ex4-ValueIteration2">Ex4-ValueIteration2</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Ex4-ValueIteration2-figure1'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure1-ValueIteration2-value.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-ValueIteration2-figure1-ValueIteration2-value.png"/>
+                    </a>
+                <p class="report-subfigure-caption">ValueIteration2-value</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure1-ValueIteration2-value.pdf"> main </a></p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure1-ValueIteration2-policy.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-ValueIteration2-figure1-ValueIteration2-policy.png"/>
+                    </a>
+                <p class="report-subfigure-caption">ValueIteration2-policy</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure1-ValueIteration2-policy.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure1-ValueIteration2-value.pdf">ValueIteration2-value</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure1-ValueIteration2-value.png">png</a>:  image/png</p>
+</div>
+</div>
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure1-ValueIteration2-policy.pdf">ValueIteration2-policy</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure1-ValueIteration2-policy.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div><div style="clear:left" class='report-figure None' id='Evaluation-Ex4-ValueIteration2-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure2-GroundTruth-value.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-ValueIteration2-figure2-GroundTruth-value.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth-value</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure2-GroundTruth-value.pdf"> main </a></p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure2-GroundTruth-policy.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-ValueIteration2-figure2-GroundTruth-policy.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth-policy</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure2-GroundTruth-policy.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure2-GroundTruth-value.pdf">GroundTruth-value</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure2-GroundTruth-value.png">png</a>:  image/png</p>
+</div>
+</div>
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure2-GroundTruth-policy.pdf">GroundTruth-policy</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-ValueIteration2-figure2-GroundTruth-policy.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> ValueIteration2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">policy_accuracy: 0.9974683544303797
+value_func_r2:1.000
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-PolicyIteration0">
+    <h><a href="#Evaluation-Ex4-PolicyIteration0">Ex4-PolicyIteration0</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Ex4-PolicyIteration0-figure1'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure1-PolicyIteration0-value.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure1-PolicyIteration0-value.png"/>
+                    </a>
+                <p class="report-subfigure-caption">PolicyIteration0-value</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure1-PolicyIteration0-value.pdf"> main </a></p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure1-PolicyIteration0-policy.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure1-PolicyIteration0-policy.png"/>
+                    </a>
+                <p class="report-subfigure-caption">PolicyIteration0-policy</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure1-PolicyIteration0-policy.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure1-PolicyIteration0-value.pdf">PolicyIteration0-value</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure1-PolicyIteration0-value.png">png</a>:  image/png</p>
+</div>
+</div>
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure1-PolicyIteration0-policy.pdf">PolicyIteration0-policy</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure1-PolicyIteration0-policy.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div><div style="clear:left" class='report-figure None' id='Evaluation-Ex4-PolicyIteration0-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure2-GroundTruth-value.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure2-GroundTruth-value.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth-value</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure2-GroundTruth-value.pdf"> main </a></p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure2-GroundTruth-policy.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure2-GroundTruth-policy.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth-policy</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure2-GroundTruth-policy.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure2-GroundTruth-value.pdf">GroundTruth-value</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure2-GroundTruth-value.png">png</a>:  image/png</p>
+</div>
+</div>
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure2-GroundTruth-policy.pdf">GroundTruth-policy</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration0-figure2-GroundTruth-policy.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> PolicyIteration0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">policy_accuracy: 0.9411764705882353
+value_func_r2:1.000
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-PolicyIteration1">
+    <h><a href="#Evaluation-Ex4-PolicyIteration1">Ex4-PolicyIteration1</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Ex4-PolicyIteration1-figure1'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure1-PolicyIteration1-value.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure1-PolicyIteration1-value.png"/>
+                    </a>
+                <p class="report-subfigure-caption">PolicyIteration1-value</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure1-PolicyIteration1-value.pdf"> main </a></p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure1-PolicyIteration1-policy.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure1-PolicyIteration1-policy.png"/>
+                    </a>
+                <p class="report-subfigure-caption">PolicyIteration1-policy</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure1-PolicyIteration1-policy.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure1-PolicyIteration1-value.pdf">PolicyIteration1-value</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure1-PolicyIteration1-value.png">png</a>:  image/png</p>
+</div>
+</div>
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure1-PolicyIteration1-policy.pdf">PolicyIteration1-policy</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure1-PolicyIteration1-policy.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div><div style="clear:left" class='report-figure None' id='Evaluation-Ex4-PolicyIteration1-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure2-GroundTruth-value.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure2-GroundTruth-value.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth-value</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure2-GroundTruth-value.pdf"> main </a></p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure2-GroundTruth-policy.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure2-GroundTruth-policy.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth-policy</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure2-GroundTruth-policy.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure2-GroundTruth-value.pdf">GroundTruth-value</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure2-GroundTruth-value.png">png</a>:  image/png</p>
+</div>
+</div>
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure2-GroundTruth-policy.pdf">GroundTruth-policy</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration1-figure2-GroundTruth-policy.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> PolicyIteration1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">policy_accuracy: 1.0
+value_func_r2:1.000
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Ex4-PolicyIteration2">
+    <h><a href="#Evaluation-Ex4-PolicyIteration2">Ex4-PolicyIteration2</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Ex4-PolicyIteration2-figure1'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure1-PolicyIteration2-value.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure1-PolicyIteration2-value.png"/>
+                    </a>
+                <p class="report-subfigure-caption">PolicyIteration2-value</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure1-PolicyIteration2-value.pdf"> main </a></p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure1-PolicyIteration2-policy.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure1-PolicyIteration2-policy.png"/>
+                    </a>
+                <p class="report-subfigure-caption">PolicyIteration2-policy</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure1-PolicyIteration2-policy.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure1-PolicyIteration2-value.pdf">PolicyIteration2-value</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure1-PolicyIteration2-value.png">png</a>:  image/png</p>
+</div>
+</div>
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure1-PolicyIteration2-policy.pdf">PolicyIteration2-policy</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure1-PolicyIteration2-policy.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div><div style="clear:left" class='report-figure None' id='Evaluation-Ex4-PolicyIteration2-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure2-GroundTruth-value.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure2-GroundTruth-value.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth-value</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure2-GroundTruth-value.pdf"> main </a></p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure2-GroundTruth-policy.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure2-GroundTruth-policy.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth-policy</p><p class="report-subfigure-main-link"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure2-GroundTruth-policy.pdf"> main </a></p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure2-GroundTruth-value.pdf">GroundTruth-value</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure2-GroundTruth-value.png">png</a>:  image/png</p>
+</div>
+</div>
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure2-GroundTruth-policy.pdf">GroundTruth-policy</a>:  application/pdf</p>
+<div class="datanode-children">
+<div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Ex4-PolicyIteration2-figure2-GroundTruth-policy.png">png</a>:  image/png</p>
+</div>
+</div>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> PolicyIteration2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">policy_accuracy: 0.9974683544303797
+value_func_r2:1.000
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+</div>
+</section> 
+</div> 
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1739 @@
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript"
+        src="index.html_resources/static/jquery/jquery.js"></script>
+
+    <!-- Use imagezoom plugin -->
+    <script type="text/javascript"
+        src="index.html_resources/static/jquery/jquery.imageZoom.js"></script>
+    <link rel="stylesheet"
+          href="index.html_resources/static/jquery/jquery.imageZoom.css"/>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('.zoomable').imageZoom();
+        });
+    </script>
+
+
+    <!-- Use tablesorter plugin -->
+    <script type="text/javascript"
+            src="index.html_resources/static/jquery/tablesorter/jquery.tablesorter.js"></script>
+    <link rel="stylesheet"
+          href="index.html_resources/static/jquery/tablesorter/themes/blue/style.css"/>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".tablesorter").tablesorter();
+    }
+    );
+    </script>
+    
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: {
+            equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"]
+        },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/SVG"], //" "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$']],
+          displayMath: [ ['$$','$$'] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+      //MathJax.Ajax.loadComplete("/media/tex/symbols.js");
+    </script>
+
+    <script type='text/javascript'
+            src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+
+
+
+    <style type="text/css">
+    /* Extra CSS passed by user. */
+        
+    </style>
+
+
+    <link rel="stylesheet"
+          href="index.html_resources/static/reprep/default_style.css"/>
+
+    <title> Evaluation </title>
+<body>
+
+<p id="reprep-head">
+    Report created on 2026-01-09-19:18:35
+    by <a href="http://purl.org/censi/2010/RepRep">RepRep</a>.
+    Show:
+    <input type="submit" name="datanode_toggle"
+           value="data nodes" id="datanode_toggle" />
+</p>
+
+
+
+<script type="text/javascript">
+ $(document).ready(function() {
+   $('.datanode').hide();
+   $('#datanode_toggle').click(function(){
+     $('.datanode').toggle();
+   });
+ });
+</script>
+
+
+
+    <div class='report-node' id="Evaluation">
+    <h><a href="#Evaluation">Evaluation</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Evaluated </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Test cases completion ratio:
+	(12/12)</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> OverallPerformance </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">AggregatedPerformanceRes(n_test_cases=12,
+                         n_completed_test_cases=12,
+                         exceptions=[],
+                         failed_test_id=[],
+                         perf_res=Ex02PerformanceResult(accuracy={&apos;BreadthFirst&apos;: 1.0,
+                                                                  &apos;DepthFirst&apos;: 1.0,
+                                                                  &apos;IterativeDeepening&apos;: 1.0},
+                                                        solve_time={&apos;BreadthFirst&apos;: 6.993225000000562e-05,
+                                                                    &apos;DepthFirst&apos;: 7.866928333332042e-05,
+                                                                    &apos;IterativeDeepening&apos;: 0.00023044049999999794}))</pre>
+               </div>
+
+            </div>
+            
+    <div class='report-node' id="Evaluation-Exercise2-DepthFirst-easy01">
+    <h><a href="#Evaluation-Exercise2-DepthFirst-easy01">Exercise2-DepthFirst-easy01</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-easy01-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure1-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure1-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure1-Graph.png">Graph</a>:  image/png</p>
+</div>
+</div>
+    <div class='report-node' id="Evaluation-Exercise2-DepthFirst-easy01-DepthFirst">
+    <h><a href="#Evaluation-Exercise2-DepthFirst-easy01-DepthFirst">DepthFirst</a></h><section> 
+</section> 
+</div> 
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-easy01-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure2-Path0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure2-Path0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path0</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure2-GroundTruth0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure2-GroundTruth0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth0</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure2-Path0.png">Path0</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure2-GroundTruth0.png">GroundTruth0</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 2,	Goal: 6
+Student solution : CORRECT
+Your algo path: No path
+Your algo opened nodes: 2-&gt;3-&gt;4
+Ground truth path: No path 
+Ground truth opened nodes: 2-&gt;3-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-easy01-figure3'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure3-Path1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure3-Path1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path1</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure3-GroundTruth1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure3-GroundTruth1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth1</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure3-Path1.png">Path1</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure3-GroundTruth1.png">GroundTruth1</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 6,	Goal: 6
+Student solution : CORRECT
+Your algo path: 6
+Your algo opened nodes: 6
+Ground truth path: 6 
+Ground truth opened nodes: 6
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-easy01-figure4'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure4-Path2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure4-Path2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path2</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure4-GroundTruth2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure4-GroundTruth2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth2</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure4-Path2.png">Path2</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure4-GroundTruth2.png">GroundTruth2</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 6,	Goal: 1
+Student solution : CORRECT
+Your algo path: No path
+Your algo opened nodes: 6-&gt;3-&gt;4
+Ground truth path: No path 
+Ground truth opened nodes: 6-&gt;3-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-easy01-figure5'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure5-Path3.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure5-Path3.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path3</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure5-GroundTruth3.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure5-GroundTruth3.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth3</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure5-Path3.png">Path3</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure5-GroundTruth3.png">GroundTruth3</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query3 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 5,	Goal: 4
+Student solution : CORRECT
+Your algo path: 5-&gt;6-&gt;3-&gt;4
+Your algo opened nodes: 5-&gt;6-&gt;3-&gt;4
+Ground truth path: 5-&gt;6-&gt;3-&gt;4 
+Ground truth opened nodes: 5-&gt;6-&gt;3-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-easy01-figure6'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure6-Path4.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure6-Path4.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path4</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure6-GroundTruth4.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure6-GroundTruth4.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth4</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure6-Path4.png">Path4</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-easy01-figure6-GroundTruth4.png">GroundTruth4</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query4 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 1,	Goal: 4
+Student solution : CORRECT
+Your algo path: 1-&gt;2-&gt;4
+Your algo opened nodes: 1-&gt;2-&gt;4
+Ground truth path: 1-&gt;2-&gt;4 
+Ground truth opened nodes: 1-&gt;2-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Exercise2-BreadthFirst-easy01">
+    <h><a href="#Evaluation-Exercise2-BreadthFirst-easy01">Exercise2-BreadthFirst-easy01</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-easy01-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure1-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure1-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure1-Graph.png">Graph</a>:  image/png</p>
+</div>
+</div>
+    <div class='report-node' id="Evaluation-Exercise2-BreadthFirst-easy01-BreadthFirst">
+    <h><a href="#Evaluation-Exercise2-BreadthFirst-easy01-BreadthFirst">BreadthFirst</a></h><section> 
+</section> 
+</div> 
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-easy01-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure2-Path0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure2-Path0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path0</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure2-GroundTruth0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure2-GroundTruth0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth0</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure2-Path0.png">Path0</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure2-GroundTruth0.png">GroundTruth0</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 2,	Goal: 6
+Student solution : CORRECT
+Your algo path: No path
+Your algo opened nodes: 2-&gt;3-&gt;4
+Ground truth path: No path 
+Ground truth opened nodes: 2-&gt;3-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-easy01-figure3'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure3-Path1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure3-Path1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path1</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure3-GroundTruth1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure3-GroundTruth1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth1</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure3-Path1.png">Path1</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure3-GroundTruth1.png">GroundTruth1</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 6,	Goal: 6
+Student solution : CORRECT
+Your algo path: 6
+Your algo opened nodes: 6
+Ground truth path: 6 
+Ground truth opened nodes: 6
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-easy01-figure4'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure4-Path2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure4-Path2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path2</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure4-GroundTruth2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure4-GroundTruth2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth2</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure4-Path2.png">Path2</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure4-GroundTruth2.png">GroundTruth2</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 6,	Goal: 1
+Student solution : CORRECT
+Your algo path: No path
+Your algo opened nodes: 6-&gt;3-&gt;4
+Ground truth path: No path 
+Ground truth opened nodes: 6-&gt;3-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-easy01-figure5'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure5-Path3.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure5-Path3.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path3</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure5-GroundTruth3.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure5-GroundTruth3.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth3</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure5-Path3.png">Path3</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure5-GroundTruth3.png">GroundTruth3</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query3 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 5,	Goal: 4
+Student solution : CORRECT
+Your algo path: 5-&gt;6-&gt;3-&gt;4
+Your algo opened nodes: 5-&gt;6-&gt;3-&gt;4
+Ground truth path: 5-&gt;6-&gt;3-&gt;4 
+Ground truth opened nodes: 5-&gt;6-&gt;3-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-easy01-figure6'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure6-Path4.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure6-Path4.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path4</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure6-GroundTruth4.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure6-GroundTruth4.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth4</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure6-Path4.png">Path4</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-easy01-figure6-GroundTruth4.png">GroundTruth4</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query4 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 1,	Goal: 4
+Student solution : CORRECT
+Your algo path: 1-&gt;2-&gt;4
+Your algo opened nodes: 1-&gt;2-&gt;3-&gt;4
+Ground truth path: 1-&gt;2-&gt;4 
+Ground truth opened nodes: 1-&gt;2-&gt;3-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Exercise2-IterativeDeepening-easy01">
+    <h><a href="#Evaluation-Exercise2-IterativeDeepening-easy01">Exercise2-IterativeDeepening-easy01</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-easy01-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure1-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure1-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure1-Graph.png">Graph</a>:  image/png</p>
+</div>
+</div>
+    <div class='report-node' id="Evaluation-Exercise2-IterativeDeepening-easy01-IterativeDeepening">
+    <h><a href="#Evaluation-Exercise2-IterativeDeepening-easy01-IterativeDeepening">IterativeDeepening</a></h><section> 
+</section> 
+</div> 
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-easy01-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure2-Path0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure2-Path0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path0</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure2-GroundTruth0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure2-GroundTruth0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth0</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure2-Path0.png">Path0</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure2-GroundTruth0.png">GroundTruth0</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 2,	Goal: 6
+Student solution : CORRECT
+Your algo path: No path
+Your algo opened nodes: 2-&gt;3-&gt;4
+Ground truth path: No path 
+Ground truth opened nodes: 2-&gt;3-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-easy01-figure3'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure3-Path1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure3-Path1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path1</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure3-GroundTruth1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure3-GroundTruth1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth1</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure3-Path1.png">Path1</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure3-GroundTruth1.png">GroundTruth1</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 6,	Goal: 6
+Student solution : CORRECT
+Your algo path: 6
+Your algo opened nodes: 6
+Ground truth path: 6 
+Ground truth opened nodes: 6
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-easy01-figure4'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure4-Path2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure4-Path2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path2</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure4-GroundTruth2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure4-GroundTruth2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth2</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure4-Path2.png">Path2</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure4-GroundTruth2.png">GroundTruth2</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 6,	Goal: 1
+Student solution : CORRECT
+Your algo path: No path
+Your algo opened nodes: 6-&gt;3-&gt;4
+Ground truth path: No path 
+Ground truth opened nodes: 6-&gt;3-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-easy01-figure5'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure5-Path3.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure5-Path3.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path3</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure5-GroundTruth3.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure5-GroundTruth3.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth3</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure5-Path3.png">Path3</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure5-GroundTruth3.png">GroundTruth3</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query3 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 5,	Goal: 4
+Student solution : CORRECT
+Your algo path: 5-&gt;6-&gt;3-&gt;4
+Your algo opened nodes: 5-&gt;6-&gt;3-&gt;4
+Ground truth path: 5-&gt;6-&gt;3-&gt;4 
+Ground truth opened nodes: 5-&gt;6-&gt;3-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-easy01-figure6'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure6-Path4.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure6-Path4.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path4</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure6-GroundTruth4.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure6-GroundTruth4.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth4</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure6-Path4.png">Path4</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-easy01-figure6-GroundTruth4.png">GroundTruth4</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query4 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 1,	Goal: 4
+Student solution : CORRECT
+Your algo path: 1-&gt;2-&gt;4
+Your algo opened nodes: 1-&gt;2-&gt;4
+Ground truth path: 1-&gt;2-&gt;4 
+Ground truth opened nodes: 1-&gt;2-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Exercise2-DepthFirst-graph02">
+    <h><a href="#Evaluation-Exercise2-DepthFirst-graph02">Exercise2-DepthFirst-graph02</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-graph02-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure1-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure1-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure1-Graph.png">Graph</a>:  image/png</p>
+</div>
+</div>
+    <div class='report-node' id="Evaluation-Exercise2-DepthFirst-graph02-DepthFirst">
+    <h><a href="#Evaluation-Exercise2-DepthFirst-graph02-DepthFirst">DepthFirst</a></h><section> 
+</section> 
+</div> 
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-graph02-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure2-Path0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure2-Path0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path0</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure2-GroundTruth0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure2-GroundTruth0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth0</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure2-Path0.png">Path0</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure2-GroundTruth0.png">GroundTruth0</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 1,	Goal: 6
+Student solution : CORRECT
+Your algo path: 1-&gt;2-&gt;0-&gt;6
+Your algo opened nodes: 1-&gt;2-&gt;0-&gt;6
+Ground truth path: 1-&gt;2-&gt;0-&gt;6 
+Ground truth opened nodes: 1-&gt;2-&gt;0-&gt;6
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-graph02-figure3'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure3-Path1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure3-Path1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path1</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure3-GroundTruth1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure3-GroundTruth1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth1</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure3-Path1.png">Path1</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure3-GroundTruth1.png">GroundTruth1</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 3,	Goal: 4
+Student solution : CORRECT
+Your algo path: 3-&gt;6-&gt;4
+Your algo opened nodes: 3-&gt;6-&gt;0-&gt;2-&gt;1-&gt;9-&gt;5-&gt;8-&gt;4
+Ground truth path: 3-&gt;6-&gt;4 
+Ground truth opened nodes: 3-&gt;6-&gt;0-&gt;2-&gt;1-&gt;9-&gt;5-&gt;8-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-graph02-figure4'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure4-Path2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure4-Path2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path2</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure4-GroundTruth2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure4-GroundTruth2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth2</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure4-Path2.png">Path2</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-graph02-figure4-GroundTruth2.png">GroundTruth2</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 7,	Goal: 2
+Student solution : CORRECT
+Your algo path: 7-&gt;0-&gt;2
+Your algo opened nodes: 7-&gt;0-&gt;2
+Ground truth path: 7-&gt;0-&gt;2 
+Ground truth opened nodes: 7-&gt;0-&gt;2
+ 
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Exercise2-BreadthFirst-graph02">
+    <h><a href="#Evaluation-Exercise2-BreadthFirst-graph02">Exercise2-BreadthFirst-graph02</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-graph02-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure1-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure1-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure1-Graph.png">Graph</a>:  image/png</p>
+</div>
+</div>
+    <div class='report-node' id="Evaluation-Exercise2-BreadthFirst-graph02-BreadthFirst">
+    <h><a href="#Evaluation-Exercise2-BreadthFirst-graph02-BreadthFirst">BreadthFirst</a></h><section> 
+</section> 
+</div> 
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-graph02-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure2-Path0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure2-Path0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path0</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure2-GroundTruth0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure2-GroundTruth0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth0</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure2-Path0.png">Path0</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure2-GroundTruth0.png">GroundTruth0</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 1,	Goal: 6
+Student solution : CORRECT
+Your algo path: 1-&gt;4-&gt;6
+Your algo opened nodes: 1-&gt;2-&gt;4-&gt;5-&gt;9-&gt;0-&gt;8-&gt;6
+Ground truth path: 1-&gt;4-&gt;6 
+Ground truth opened nodes: 1-&gt;2-&gt;4-&gt;5-&gt;9-&gt;0-&gt;8-&gt;6
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-graph02-figure3'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure3-Path1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure3-Path1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path1</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure3-GroundTruth1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure3-GroundTruth1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth1</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure3-Path1.png">Path1</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure3-GroundTruth1.png">GroundTruth1</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 3,	Goal: 4
+Student solution : CORRECT
+Your algo path: 3-&gt;6-&gt;4
+Your algo opened nodes: 3-&gt;6-&gt;7-&gt;0-&gt;4
+Ground truth path: 3-&gt;6-&gt;4 
+Ground truth opened nodes: 3-&gt;6-&gt;7-&gt;0-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-graph02-figure4'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure4-Path2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure4-Path2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path2</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure4-GroundTruth2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure4-GroundTruth2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth2</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure4-Path2.png">Path2</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-graph02-figure4-GroundTruth2.png">GroundTruth2</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 7,	Goal: 2
+Student solution : CORRECT
+Your algo path: 7-&gt;0-&gt;2
+Your algo opened nodes: 7-&gt;0-&gt;3-&gt;4-&gt;6-&gt;8-&gt;2
+Ground truth path: 7-&gt;0-&gt;2 
+Ground truth opened nodes: 7-&gt;0-&gt;3-&gt;4-&gt;6-&gt;8-&gt;2
+ 
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Exercise2-IterativeDeepening-graph02">
+    <h><a href="#Evaluation-Exercise2-IterativeDeepening-graph02">Exercise2-IterativeDeepening-graph02</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-graph02-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure1-Graph.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure1-Graph.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Graph</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure1-Graph.png">Graph</a>:  image/png</p>
+</div>
+</div>
+    <div class='report-node' id="Evaluation-Exercise2-IterativeDeepening-graph02-IterativeDeepening">
+    <h><a href="#Evaluation-Exercise2-IterativeDeepening-graph02-IterativeDeepening">IterativeDeepening</a></h><section> 
+</section> 
+</div> 
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-graph02-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure2-Path0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure2-Path0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path0</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure2-GroundTruth0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure2-GroundTruth0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth0</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure2-Path0.png">Path0</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure2-GroundTruth0.png">GroundTruth0</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 1,	Goal: 6
+Student solution : CORRECT
+Your algo path: 1-&gt;4-&gt;6
+Your algo opened nodes: 1-&gt;2-&gt;0-&gt;8-&gt;4-&gt;6
+Ground truth path: 1-&gt;4-&gt;6 
+Ground truth opened nodes: 1-&gt;2-&gt;0-&gt;8-&gt;4-&gt;6
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-graph02-figure3'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure3-Path1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure3-Path1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path1</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure3-GroundTruth1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure3-GroundTruth1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth1</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure3-Path1.png">Path1</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure3-GroundTruth1.png">GroundTruth1</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 3,	Goal: 4
+Student solution : CORRECT
+Your algo path: 3-&gt;6-&gt;4
+Your algo opened nodes: 3-&gt;6-&gt;0-&gt;4
+Ground truth path: 3-&gt;6-&gt;4 
+Ground truth opened nodes: 3-&gt;6-&gt;0-&gt;4
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-graph02-figure4'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure4-Path2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure4-Path2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path2</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure4-GroundTruth2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure4-GroundTruth2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth2</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure4-Path2.png">Path2</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-graph02-figure4-GroundTruth2.png">GroundTruth2</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 7,	Goal: 2
+Student solution : CORRECT
+Your algo path: 7-&gt;0-&gt;2
+Your algo opened nodes: 7-&gt;0-&gt;2
+Ground truth path: 7-&gt;0-&gt;2 
+Ground truth opened nodes: 7-&gt;0-&gt;2
+ 
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Exercise2-DepthFirst-grid01">
+    <h><a href="#Evaluation-Exercise2-DepthFirst-grid01">Exercise2-DepthFirst-grid01</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-grid01-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure1-Grid.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure1-Grid.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Grid</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure1-Grid.png">Grid</a>:  image/png</p>
+</div>
+</div>
+    <div class='report-node' id="Evaluation-Exercise2-DepthFirst-grid01-DepthFirst">
+    <h><a href="#Evaluation-Exercise2-DepthFirst-grid01-DepthFirst">DepthFirst</a></h><section> 
+</section> 
+</div> 
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-grid01-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure2-Path0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure2-Path0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path0</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure2-GroundTruth0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure2-GroundTruth0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth0</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure2-Path0.png">Path0</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure2-GroundTruth0.png">GroundTruth0</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 4,	Goal: 5
+Student solution : CORRECT
+Your algo path: 4-&gt;3-&gt;7-&gt;11-&gt;10-&gt;9-&gt;5
+Your algo opened nodes: 4-&gt;3-&gt;7-&gt;11-&gt;10-&gt;9-&gt;5
+Ground truth path: 4-&gt;3-&gt;7-&gt;11-&gt;10-&gt;9-&gt;5 
+Ground truth opened nodes: 4-&gt;3-&gt;7-&gt;11-&gt;10-&gt;9-&gt;5
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-grid01-figure3'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure3-Path1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure3-Path1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path1</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure3-GroundTruth1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure3-GroundTruth1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth1</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure3-Path1.png">Path1</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure3-GroundTruth1.png">GroundTruth1</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 5,	Goal: 16
+Student solution : CORRECT
+Your algo path: 5-&gt;9-&gt;10-&gt;11-&gt;15-&gt;16
+Your algo opened nodes: 5-&gt;9-&gt;10-&gt;11-&gt;7-&gt;3-&gt;4-&gt;8-&gt;15-&gt;16
+Ground truth path: 5-&gt;9-&gt;10-&gt;11-&gt;15-&gt;16 
+Ground truth opened nodes: 5-&gt;9-&gt;10-&gt;11-&gt;7-&gt;3-&gt;4-&gt;8-&gt;15-&gt;16
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-grid01-figure4'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure4-Path2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure4-Path2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path2</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure4-GroundTruth2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure4-GroundTruth2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth2</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure4-Path2.png">Path2</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid01-figure4-GroundTruth2.png">GroundTruth2</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 10,	Goal: 3
+Student solution : CORRECT
+Your algo path: 10-&gt;11-&gt;7-&gt;3
+Your algo opened nodes: 10-&gt;9-&gt;5-&gt;13-&gt;11-&gt;7-&gt;3
+Ground truth path: 10-&gt;11-&gt;7-&gt;3 
+Ground truth opened nodes: 10-&gt;9-&gt;5-&gt;13-&gt;11-&gt;7-&gt;3
+ 
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Exercise2-BreadthFirst-grid01">
+    <h><a href="#Evaluation-Exercise2-BreadthFirst-grid01">Exercise2-BreadthFirst-grid01</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-grid01-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure1-Grid.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure1-Grid.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Grid</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure1-Grid.png">Grid</a>:  image/png</p>
+</div>
+</div>
+    <div class='report-node' id="Evaluation-Exercise2-BreadthFirst-grid01-BreadthFirst">
+    <h><a href="#Evaluation-Exercise2-BreadthFirst-grid01-BreadthFirst">BreadthFirst</a></h><section> 
+</section> 
+</div> 
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-grid01-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure2-Path0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure2-Path0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path0</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure2-GroundTruth0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure2-GroundTruth0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth0</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure2-Path0.png">Path0</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure2-GroundTruth0.png">GroundTruth0</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 4,	Goal: 5
+Student solution : CORRECT
+Your algo path: 4-&gt;3-&gt;7-&gt;11-&gt;10-&gt;9-&gt;5
+Your algo opened nodes: 4-&gt;3-&gt;8-&gt;7-&gt;11-&gt;10-&gt;15-&gt;9-&gt;16-&gt;5
+Ground truth path: 4-&gt;3-&gt;7-&gt;11-&gt;10-&gt;9-&gt;5 
+Ground truth opened nodes: 4-&gt;3-&gt;8-&gt;7-&gt;11-&gt;10-&gt;15-&gt;9-&gt;16-&gt;5
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-grid01-figure3'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure3-Path1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure3-Path1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path1</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure3-GroundTruth1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure3-GroundTruth1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth1</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure3-Path1.png">Path1</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure3-GroundTruth1.png">GroundTruth1</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 5,	Goal: 16
+Student solution : CORRECT
+Your algo path: 5-&gt;9-&gt;10-&gt;11-&gt;15-&gt;16
+Your algo opened nodes: 5-&gt;9-&gt;10-&gt;13-&gt;11-&gt;7-&gt;15-&gt;3-&gt;8-&gt;16
+Ground truth path: 5-&gt;9-&gt;10-&gt;11-&gt;15-&gt;16 
+Ground truth opened nodes: 5-&gt;9-&gt;10-&gt;13-&gt;11-&gt;7-&gt;15-&gt;3-&gt;8-&gt;16
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-grid01-figure4'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure4-Path2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure4-Path2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path2</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure4-GroundTruth2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure4-GroundTruth2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth2</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure4-Path2.png">Path2</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid01-figure4-GroundTruth2.png">GroundTruth2</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 10,	Goal: 3
+Student solution : CORRECT
+Your algo path: 10-&gt;11-&gt;7-&gt;3
+Your algo opened nodes: 10-&gt;9-&gt;11-&gt;5-&gt;13-&gt;7-&gt;15-&gt;3
+Ground truth path: 10-&gt;11-&gt;7-&gt;3 
+Ground truth opened nodes: 10-&gt;9-&gt;11-&gt;5-&gt;13-&gt;7-&gt;15-&gt;3
+ 
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Exercise2-IterativeDeepening-grid01">
+    <h><a href="#Evaluation-Exercise2-IterativeDeepening-grid01">Exercise2-IterativeDeepening-grid01</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-grid01-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure1-Grid.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure1-Grid.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Grid</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure1-Grid.png">Grid</a>:  image/png</p>
+</div>
+</div>
+    <div class='report-node' id="Evaluation-Exercise2-IterativeDeepening-grid01-IterativeDeepening">
+    <h><a href="#Evaluation-Exercise2-IterativeDeepening-grid01-IterativeDeepening">IterativeDeepening</a></h><section> 
+</section> 
+</div> 
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-grid01-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure2-Path0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure2-Path0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path0</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure2-GroundTruth0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure2-GroundTruth0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth0</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure2-Path0.png">Path0</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure2-GroundTruth0.png">GroundTruth0</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 4,	Goal: 5
+Student solution : CORRECT
+Your algo path: 4-&gt;3-&gt;7-&gt;11-&gt;10-&gt;9-&gt;5
+Your algo opened nodes: 4-&gt;3-&gt;7-&gt;11-&gt;10-&gt;9-&gt;5
+Ground truth path: 4-&gt;3-&gt;7-&gt;11-&gt;10-&gt;9-&gt;5 
+Ground truth opened nodes: 4-&gt;3-&gt;7-&gt;11-&gt;10-&gt;9-&gt;5
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-grid01-figure3'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure3-Path1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure3-Path1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path1</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure3-GroundTruth1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure3-GroundTruth1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth1</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure3-Path1.png">Path1</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure3-GroundTruth1.png">GroundTruth1</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 5,	Goal: 16
+Student solution : CORRECT
+Your algo path: 5-&gt;9-&gt;10-&gt;11-&gt;15-&gt;16
+Your algo opened nodes: 5-&gt;9-&gt;10-&gt;11-&gt;7-&gt;3-&gt;8-&gt;15-&gt;16
+Ground truth path: 5-&gt;9-&gt;10-&gt;11-&gt;15-&gt;16 
+Ground truth opened nodes: 5-&gt;9-&gt;10-&gt;11-&gt;7-&gt;3-&gt;8-&gt;15-&gt;16
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-grid01-figure4'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure4-Path2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure4-Path2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path2</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure4-GroundTruth2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure4-GroundTruth2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth2</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure4-Path2.png">Path2</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid01-figure4-GroundTruth2.png">GroundTruth2</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 10,	Goal: 3
+Student solution : CORRECT
+Your algo path: 10-&gt;11-&gt;7-&gt;3
+Your algo opened nodes: 10-&gt;9-&gt;5-&gt;13-&gt;11-&gt;7-&gt;3
+Ground truth path: 10-&gt;11-&gt;7-&gt;3 
+Ground truth opened nodes: 10-&gt;9-&gt;5-&gt;13-&gt;11-&gt;7-&gt;3
+ 
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Exercise2-DepthFirst-grid02">
+    <h><a href="#Evaluation-Exercise2-DepthFirst-grid02">Exercise2-DepthFirst-grid02</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-grid02-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure1-Grid.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure1-Grid.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Grid</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure1-Grid.png">Grid</a>:  image/png</p>
+</div>
+</div>
+    <div class='report-node' id="Evaluation-Exercise2-DepthFirst-grid02-DepthFirst">
+    <h><a href="#Evaluation-Exercise2-DepthFirst-grid02-DepthFirst">DepthFirst</a></h><section> 
+</section> 
+</div> 
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-grid02-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure2-Path0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure2-Path0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path0</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure2-GroundTruth0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure2-GroundTruth0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth0</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure2-Path0.png">Path0</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure2-GroundTruth0.png">GroundTruth0</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 386,	Goal: 98
+Student solution : CORRECT
+Your algo path: 386-&gt;366-&gt;346-&gt;326-&gt;306-&gt;286-&gt;266-&gt;246-&gt;226-&gt;225-&gt;205-&gt;185-&gt;165-&gt;145-&gt;125-&gt;105-&gt;85-&gt;65-&gt;64-&gt;63-&gt;43-&gt;23-&gt;24-&gt;25-&gt;5-&gt;6-&gt;7-&gt;8-&gt;9-&gt;10-&gt;30-&gt;31-&gt;32-&gt;33-&gt;13-&gt;14-&gt;15-&gt;35-&gt;55-&gt;54-&gt;74-&gt;73-&gt;72-&gt;92-&gt;91-&gt;90-&gt;89-&gt;109-&gt;108-&gt;128-&gt;148-&gt;149-&gt;150-&gt;151-&gt;171-&gt;172-&gt;192-&gt;212-&gt;213-&gt;214-&gt;215-&gt;216-&gt;217-&gt;197-&gt;177-&gt;157-&gt;137-&gt;117-&gt;116-&gt;96-&gt;76-&gt;77-&gt;78-&gt;98
+Your algo opened nodes: 386-&gt;366-&gt;346-&gt;326-&gt;306-&gt;286-&gt;266-&gt;246-&gt;226-&gt;225-&gt;205-&gt;185-&gt;165-&gt;145-&gt;125-&gt;105-&gt;85-&gt;65-&gt;64-&gt;63-&gt;43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;141-&gt;161-&gt;162-&gt;163-&gt;183-&gt;203-&gt;202-&gt;201-&gt;222-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;283-&gt;302-&gt;322-&gt;321-&gt;341-&gt;361-&gt;362-&gt;382-&gt;383-&gt;381-&gt;342-&gt;343-&gt;344-&gt;324-&gt;364-&gt;301-&gt;243-&gt;244-&gt;264-&gt;262-&gt;223-&gt;182-&gt;24-&gt;25-&gt;5-&gt;6-&gt;7-&gt;8-&gt;9-&gt;10-&gt;30-&gt;31-&gt;32-&gt;33-&gt;13-&gt;14-&gt;15-&gt;16-&gt;17-&gt;18-&gt;19-&gt;20-&gt;39-&gt;38-&gt;37-&gt;35-&gt;55-&gt;54-&gt;74-&gt;73-&gt;72-&gt;92-&gt;91-&gt;90-&gt;70-&gt;89-&gt;109-&gt;108-&gt;107-&gt;87-&gt;67-&gt;47-&gt;46-&gt;48-&gt;49-&gt;68-&gt;128-&gt;148-&gt;147-&gt;167-&gt;187-&gt;188-&gt;208-&gt;209-&gt;228-&gt;207-&gt;149-&gt;150-&gt;151-&gt;131-&gt;171-&gt;172-&gt;173-&gt;192-&gt;212-&gt;211-&gt;213-&gt;214-&gt;194-&gt;215-&gt;216-&gt;217-&gt;197-&gt;177-&gt;157-&gt;137-&gt;117-&gt;116-&gt;96-&gt;76-&gt;77-&gt;78-&gt;79-&gt;99-&gt;100-&gt;119-&gt;98
+Ground truth path: 386-&gt;366-&gt;346-&gt;326-&gt;306-&gt;286-&gt;266-&gt;246-&gt;226-&gt;225-&gt;205-&gt;185-&gt;165-&gt;145-&gt;125-&gt;105-&gt;85-&gt;65-&gt;64-&gt;63-&gt;43-&gt;23-&gt;24-&gt;25-&gt;5-&gt;6-&gt;7-&gt;8-&gt;9-&gt;10-&gt;30-&gt;31-&gt;32-&gt;33-&gt;13-&gt;14-&gt;15-&gt;35-&gt;55-&gt;54-&gt;74-&gt;73-&gt;72-&gt;92-&gt;91-&gt;90-&gt;89-&gt;109-&gt;108-&gt;128-&gt;148-&gt;149-&gt;150-&gt;151-&gt;171-&gt;172-&gt;192-&gt;212-&gt;213-&gt;214-&gt;215-&gt;216-&gt;217-&gt;197-&gt;177-&gt;157-&gt;137-&gt;117-&gt;116-&gt;96-&gt;76-&gt;77-&gt;78-&gt;98 
+Ground truth opened nodes: 386-&gt;366-&gt;346-&gt;326-&gt;306-&gt;286-&gt;266-&gt;246-&gt;226-&gt;225-&gt;205-&gt;185-&gt;165-&gt;145-&gt;125-&gt;105-&gt;85-&gt;65-&gt;64-&gt;63-&gt;43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;141-&gt;161-&gt;162-&gt;163-&gt;183-&gt;203-&gt;202-&gt;201-&gt;222-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;283-&gt;302-&gt;322-&gt;321-&gt;341-&gt;361-&gt;362-&gt;382-&gt;383-&gt;381-&gt;342-&gt;343-&gt;344-&gt;324-&gt;364-&gt;301-&gt;243-&gt;244-&gt;264-&gt;262-&gt;223-&gt;182-&gt;24-&gt;25-&gt;5-&gt;6-&gt;7-&gt;8-&gt;9-&gt;10-&gt;30-&gt;31-&gt;32-&gt;33-&gt;13-&gt;14-&gt;15-&gt;16-&gt;17-&gt;18-&gt;19-&gt;20-&gt;39-&gt;38-&gt;37-&gt;35-&gt;55-&gt;54-&gt;74-&gt;73-&gt;72-&gt;92-&gt;91-&gt;90-&gt;70-&gt;89-&gt;109-&gt;108-&gt;107-&gt;87-&gt;67-&gt;47-&gt;46-&gt;48-&gt;49-&gt;68-&gt;128-&gt;148-&gt;147-&gt;167-&gt;187-&gt;188-&gt;208-&gt;209-&gt;228-&gt;207-&gt;149-&gt;150-&gt;151-&gt;131-&gt;171-&gt;172-&gt;173-&gt;192-&gt;212-&gt;211-&gt;213-&gt;214-&gt;194-&gt;215-&gt;216-&gt;217-&gt;197-&gt;177-&gt;157-&gt;137-&gt;117-&gt;116-&gt;96-&gt;76-&gt;77-&gt;78-&gt;79-&gt;99-&gt;100-&gt;119-&gt;98
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-grid02-figure3'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure3-Path1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure3-Path1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path1</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure3-GroundTruth1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure3-GroundTruth1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth1</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure3-Path1.png">Path1</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure3-GroundTruth1.png">GroundTruth1</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 43,	Goal: 344
+Student solution : CORRECT
+Your algo path: 43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;162-&gt;163-&gt;164-&gt;144-&gt;124-&gt;125-&gt;105-&gt;85-&gt;86-&gt;87-&gt;67-&gt;47-&gt;27-&gt;7-&gt;8-&gt;9-&gt;10-&gt;30-&gt;31-&gt;32-&gt;33-&gt;13-&gt;14-&gt;15-&gt;35-&gt;55-&gt;54-&gt;74-&gt;73-&gt;72-&gt;92-&gt;91-&gt;90-&gt;89-&gt;109-&gt;108-&gt;128-&gt;148-&gt;147-&gt;167-&gt;187-&gt;186-&gt;185-&gt;205-&gt;204-&gt;203-&gt;202-&gt;222-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;302-&gt;322-&gt;342-&gt;343-&gt;344
+Your algo opened nodes: 43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;62-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;141-&gt;161-&gt;162-&gt;163-&gt;164-&gt;144-&gt;124-&gt;125-&gt;105-&gt;85-&gt;65-&gt;64-&gt;84-&gt;86-&gt;87-&gt;67-&gt;47-&gt;27-&gt;7-&gt;6-&gt;5-&gt;25-&gt;8-&gt;9-&gt;10-&gt;30-&gt;31-&gt;32-&gt;33-&gt;13-&gt;14-&gt;15-&gt;16-&gt;17-&gt;18-&gt;19-&gt;20-&gt;39-&gt;38-&gt;37-&gt;35-&gt;55-&gt;54-&gt;74-&gt;73-&gt;72-&gt;92-&gt;91-&gt;90-&gt;70-&gt;89-&gt;109-&gt;108-&gt;128-&gt;148-&gt;147-&gt;146-&gt;167-&gt;187-&gt;186-&gt;185-&gt;205-&gt;204-&gt;203-&gt;202-&gt;201-&gt;222-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;283-&gt;302-&gt;322-&gt;321-&gt;341-&gt;361-&gt;362-&gt;382-&gt;383-&gt;381-&gt;342-&gt;343-&gt;344
+Ground truth path: 43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;162-&gt;163-&gt;164-&gt;144-&gt;124-&gt;125-&gt;105-&gt;85-&gt;86-&gt;87-&gt;67-&gt;47-&gt;27-&gt;7-&gt;8-&gt;9-&gt;10-&gt;30-&gt;31-&gt;32-&gt;33-&gt;13-&gt;14-&gt;15-&gt;35-&gt;55-&gt;54-&gt;74-&gt;73-&gt;72-&gt;92-&gt;91-&gt;90-&gt;89-&gt;109-&gt;108-&gt;128-&gt;148-&gt;147-&gt;167-&gt;187-&gt;186-&gt;185-&gt;205-&gt;204-&gt;203-&gt;202-&gt;222-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;302-&gt;322-&gt;342-&gt;343-&gt;344 
+Ground truth opened nodes: 43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;62-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;141-&gt;161-&gt;162-&gt;163-&gt;164-&gt;144-&gt;124-&gt;125-&gt;105-&gt;85-&gt;65-&gt;64-&gt;84-&gt;86-&gt;87-&gt;67-&gt;47-&gt;27-&gt;7-&gt;6-&gt;5-&gt;25-&gt;8-&gt;9-&gt;10-&gt;30-&gt;31-&gt;32-&gt;33-&gt;13-&gt;14-&gt;15-&gt;16-&gt;17-&gt;18-&gt;19-&gt;20-&gt;39-&gt;38-&gt;37-&gt;35-&gt;55-&gt;54-&gt;74-&gt;73-&gt;72-&gt;92-&gt;91-&gt;90-&gt;70-&gt;89-&gt;109-&gt;108-&gt;128-&gt;148-&gt;147-&gt;146-&gt;167-&gt;187-&gt;186-&gt;185-&gt;205-&gt;204-&gt;203-&gt;202-&gt;201-&gt;222-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;283-&gt;302-&gt;322-&gt;321-&gt;341-&gt;361-&gt;362-&gt;382-&gt;383-&gt;381-&gt;342-&gt;343-&gt;344
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-DepthFirst-grid02-figure4'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure4-Path2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure4-Path2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path2</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure4-GroundTruth2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure4-GroundTruth2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth2</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure4-Path2.png">Path2</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-DepthFirst-grid02-figure4-GroundTruth2.png">GroundTruth2</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> DepthFirst-query2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 287,	Goal: 356
+Student solution : CORRECT
+Your algo path: 287-&gt;267-&gt;247-&gt;227-&gt;207-&gt;187-&gt;167-&gt;147-&gt;146-&gt;126-&gt;106-&gt;86-&gt;85-&gt;65-&gt;64-&gt;63-&gt;43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;162-&gt;163-&gt;164-&gt;165-&gt;185-&gt;205-&gt;204-&gt;203-&gt;202-&gt;222-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;302-&gt;322-&gt;342-&gt;343-&gt;344-&gt;324-&gt;325-&gt;326-&gt;327-&gt;347-&gt;348-&gt;349-&gt;329-&gt;330-&gt;310-&gt;290-&gt;270-&gt;250-&gt;251-&gt;252-&gt;232-&gt;212-&gt;192-&gt;172-&gt;171-&gt;151-&gt;131-&gt;111-&gt;91-&gt;92-&gt;72-&gt;73-&gt;53-&gt;33-&gt;13-&gt;14-&gt;15-&gt;35-&gt;55-&gt;56-&gt;76-&gt;77-&gt;78-&gt;79-&gt;99-&gt;119-&gt;118-&gt;117-&gt;137-&gt;157-&gt;158-&gt;178-&gt;198-&gt;197-&gt;217-&gt;216-&gt;215-&gt;235-&gt;255-&gt;256-&gt;276-&gt;277-&gt;278-&gt;258-&gt;259-&gt;260-&gt;280-&gt;300-&gt;299-&gt;319-&gt;339-&gt;338-&gt;337-&gt;317-&gt;316-&gt;315-&gt;335-&gt;355-&gt;356
+Your algo opened nodes: 287-&gt;267-&gt;247-&gt;227-&gt;207-&gt;187-&gt;167-&gt;147-&gt;146-&gt;126-&gt;106-&gt;86-&gt;85-&gt;65-&gt;64-&gt;63-&gt;43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;141-&gt;161-&gt;162-&gt;163-&gt;164-&gt;144-&gt;124-&gt;165-&gt;185-&gt;205-&gt;204-&gt;203-&gt;202-&gt;201-&gt;222-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;283-&gt;302-&gt;322-&gt;321-&gt;341-&gt;361-&gt;362-&gt;382-&gt;383-&gt;381-&gt;342-&gt;343-&gt;344-&gt;324-&gt;325-&gt;326-&gt;306-&gt;327-&gt;347-&gt;348-&gt;349-&gt;329-&gt;330-&gt;310-&gt;290-&gt;270-&gt;250-&gt;249-&gt;251-&gt;252-&gt;232-&gt;212-&gt;192-&gt;172-&gt;171-&gt;151-&gt;131-&gt;111-&gt;91-&gt;90-&gt;70-&gt;89-&gt;109-&gt;108-&gt;128-&gt;129-&gt;149-&gt;169-&gt;92-&gt;72-&gt;73-&gt;53-&gt;33-&gt;13-&gt;14-&gt;15-&gt;16-&gt;17-&gt;18-&gt;19-&gt;20-&gt;39-&gt;38-&gt;37-&gt;35-&gt;55-&gt;56-&gt;76-&gt;77-&gt;78-&gt;79-&gt;99-&gt;100-&gt;119-&gt;118-&gt;117-&gt;116-&gt;137-&gt;157-&gt;158-&gt;159-&gt;160-&gt;180-&gt;200-&gt;178-&gt;198-&gt;197-&gt;217-&gt;216-&gt;215-&gt;214-&gt;194-&gt;234-&gt;235-&gt;255-&gt;256-&gt;276-&gt;277-&gt;278-&gt;258-&gt;238-&gt;259-&gt;260-&gt;280-&gt;300-&gt;299-&gt;319-&gt;339-&gt;338-&gt;337-&gt;317-&gt;316-&gt;315-&gt;295-&gt;294-&gt;274-&gt;335-&gt;334-&gt;333-&gt;313-&gt;332-&gt;353-&gt;373-&gt;372-&gt;371-&gt;392-&gt;374-&gt;375-&gt;395-&gt;396-&gt;394-&gt;393-&gt;355-&gt;356
+Ground truth path: 287-&gt;267-&gt;247-&gt;227-&gt;207-&gt;187-&gt;167-&gt;147-&gt;146-&gt;126-&gt;106-&gt;86-&gt;85-&gt;65-&gt;64-&gt;63-&gt;43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;162-&gt;163-&gt;164-&gt;165-&gt;185-&gt;205-&gt;204-&gt;203-&gt;202-&gt;222-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;302-&gt;322-&gt;342-&gt;343-&gt;344-&gt;324-&gt;325-&gt;326-&gt;327-&gt;347-&gt;348-&gt;349-&gt;329-&gt;330-&gt;310-&gt;290-&gt;270-&gt;250-&gt;251-&gt;252-&gt;232-&gt;212-&gt;192-&gt;172-&gt;171-&gt;151-&gt;131-&gt;111-&gt;91-&gt;92-&gt;72-&gt;73-&gt;53-&gt;33-&gt;13-&gt;14-&gt;15-&gt;35-&gt;55-&gt;56-&gt;76-&gt;77-&gt;78-&gt;79-&gt;99-&gt;119-&gt;118-&gt;117-&gt;137-&gt;157-&gt;158-&gt;178-&gt;198-&gt;197-&gt;217-&gt;216-&gt;215-&gt;235-&gt;255-&gt;256-&gt;276-&gt;277-&gt;278-&gt;258-&gt;259-&gt;260-&gt;280-&gt;300-&gt;299-&gt;319-&gt;339-&gt;338-&gt;337-&gt;317-&gt;316-&gt;315-&gt;335-&gt;355-&gt;356 
+Ground truth opened nodes: 287-&gt;267-&gt;247-&gt;227-&gt;207-&gt;187-&gt;167-&gt;147-&gt;146-&gt;126-&gt;106-&gt;86-&gt;85-&gt;65-&gt;64-&gt;63-&gt;43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;141-&gt;161-&gt;162-&gt;163-&gt;164-&gt;144-&gt;124-&gt;165-&gt;185-&gt;205-&gt;204-&gt;203-&gt;202-&gt;201-&gt;222-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;283-&gt;302-&gt;322-&gt;321-&gt;341-&gt;361-&gt;362-&gt;382-&gt;383-&gt;381-&gt;342-&gt;343-&gt;344-&gt;324-&gt;325-&gt;326-&gt;306-&gt;327-&gt;347-&gt;348-&gt;349-&gt;329-&gt;330-&gt;310-&gt;290-&gt;270-&gt;250-&gt;249-&gt;251-&gt;252-&gt;232-&gt;212-&gt;192-&gt;172-&gt;171-&gt;151-&gt;131-&gt;111-&gt;91-&gt;90-&gt;70-&gt;89-&gt;109-&gt;108-&gt;128-&gt;129-&gt;149-&gt;169-&gt;92-&gt;72-&gt;73-&gt;53-&gt;33-&gt;13-&gt;14-&gt;15-&gt;16-&gt;17-&gt;18-&gt;19-&gt;20-&gt;39-&gt;38-&gt;37-&gt;35-&gt;55-&gt;56-&gt;76-&gt;77-&gt;78-&gt;79-&gt;99-&gt;100-&gt;119-&gt;118-&gt;117-&gt;116-&gt;137-&gt;157-&gt;158-&gt;159-&gt;160-&gt;180-&gt;200-&gt;178-&gt;198-&gt;197-&gt;217-&gt;216-&gt;215-&gt;214-&gt;194-&gt;234-&gt;235-&gt;255-&gt;256-&gt;276-&gt;277-&gt;278-&gt;258-&gt;238-&gt;259-&gt;260-&gt;280-&gt;300-&gt;299-&gt;319-&gt;339-&gt;338-&gt;337-&gt;317-&gt;316-&gt;315-&gt;295-&gt;294-&gt;274-&gt;335-&gt;334-&gt;333-&gt;313-&gt;332-&gt;353-&gt;373-&gt;372-&gt;371-&gt;392-&gt;374-&gt;375-&gt;395-&gt;396-&gt;394-&gt;393-&gt;355-&gt;356
+ 
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Exercise2-BreadthFirst-grid02">
+    <h><a href="#Evaluation-Exercise2-BreadthFirst-grid02">Exercise2-BreadthFirst-grid02</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-grid02-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure1-Grid.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure1-Grid.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Grid</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure1-Grid.png">Grid</a>:  image/png</p>
+</div>
+</div>
+    <div class='report-node' id="Evaluation-Exercise2-BreadthFirst-grid02-BreadthFirst">
+    <h><a href="#Evaluation-Exercise2-BreadthFirst-grid02-BreadthFirst">BreadthFirst</a></h><section> 
+</section> 
+</div> 
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-grid02-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure2-Path0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure2-Path0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path0</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure2-GroundTruth0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure2-GroundTruth0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth0</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure2-Path0.png">Path0</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure2-GroundTruth0.png">GroundTruth0</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 386,	Goal: 98
+Student solution : CORRECT
+Your algo path: 386-&gt;366-&gt;346-&gt;326-&gt;306-&gt;286-&gt;266-&gt;267-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;252-&gt;232-&gt;212-&gt;213-&gt;214-&gt;215-&gt;216-&gt;217-&gt;197-&gt;177-&gt;157-&gt;137-&gt;117-&gt;118-&gt;98
+Your algo opened nodes: 386-&gt;366-&gt;385-&gt;387-&gt;346-&gt;388-&gt;326-&gt;345-&gt;347-&gt;306-&gt;325-&gt;327-&gt;344-&gt;348-&gt;286-&gt;307-&gt;324-&gt;343-&gt;364-&gt;349-&gt;266-&gt;285-&gt;287-&gt;308-&gt;342-&gt;329-&gt;369-&gt;246-&gt;265-&gt;267-&gt;288-&gt;322-&gt;341-&gt;362-&gt;330-&gt;226-&gt;245-&gt;247-&gt;264-&gt;268-&gt;302-&gt;321-&gt;361-&gt;382-&gt;310-&gt;225-&gt;227-&gt;244-&gt;269-&gt;282-&gt;301-&gt;381-&gt;383-&gt;290-&gt;311-&gt;205-&gt;207-&gt;228-&gt;243-&gt;249-&gt;270-&gt;262-&gt;281-&gt;283-&gt;185-&gt;204-&gt;187-&gt;208-&gt;223-&gt;242-&gt;250-&gt;271-&gt;261-&gt;165-&gt;184-&gt;186-&gt;203-&gt;167-&gt;188-&gt;209-&gt;222-&gt;241-&gt;251-&gt;272-&gt;145-&gt;164-&gt;183-&gt;202-&gt;147-&gt;168-&gt;252-&gt;125-&gt;144-&gt;146-&gt;163-&gt;182-&gt;201-&gt;148-&gt;169-&gt;232-&gt;253-&gt;105-&gt;124-&gt;126-&gt;162-&gt;128-&gt;149-&gt;212-&gt;233-&gt;85-&gt;106-&gt;142-&gt;161-&gt;108-&gt;129-&gt;150-&gt;192-&gt;211-&gt;213-&gt;234-&gt;65-&gt;84-&gt;86-&gt;107-&gt;122-&gt;141-&gt;109-&gt;151-&gt;172-&gt;214-&gt;235-&gt;64-&gt;87-&gt;102-&gt;89-&gt;110-&gt;131-&gt;171-&gt;173-&gt;194-&gt;215-&gt;255-&gt;63-&gt;67-&gt;101-&gt;90-&gt;111-&gt;216-&gt;256-&gt;275-&gt;43-&gt;62-&gt;47-&gt;68-&gt;81-&gt;70-&gt;91-&gt;112-&gt;217-&gt;276-&gt;274-&gt;295-&gt;23-&gt;42-&gt;61-&gt;27-&gt;46-&gt;48-&gt;92-&gt;113-&gt;197-&gt;218-&gt;237-&gt;277-&gt;296-&gt;294-&gt;315-&gt;3-&gt;24-&gt;41-&gt;7-&gt;26-&gt;49-&gt;72-&gt;93-&gt;114-&gt;133-&gt;177-&gt;198-&gt;219-&gt;238-&gt;278-&gt;297-&gt;316-&gt;335-&gt;2-&gt;25-&gt;21-&gt;6-&gt;8-&gt;29-&gt;73-&gt;94-&gt;134-&gt;157-&gt;178-&gt;258-&gt;298-&gt;317-&gt;336-&gt;334-&gt;355-&gt;1-&gt;5-&gt;9-&gt;30-&gt;53-&gt;74-&gt;154-&gt;137-&gt;158-&gt;259-&gt;299-&gt;337-&gt;356-&gt;333-&gt;375-&gt;10-&gt;31-&gt;33-&gt;54-&gt;155-&gt;117-&gt;138-&gt;159-&gt;260-&gt;300-&gt;319-&gt;338-&gt;357-&gt;313-&gt;332-&gt;353-&gt;374-&gt;395-&gt;32-&gt;51-&gt;13-&gt;34-&gt;55-&gt;175-&gt;116-&gt;118-&gt;160-&gt;280-&gt;320-&gt;339-&gt;358-&gt;377-&gt;373-&gt;394-&gt;396-&gt;14-&gt;35-&gt;56-&gt;96-&gt;98
+Ground truth path: 386-&gt;366-&gt;346-&gt;326-&gt;306-&gt;286-&gt;266-&gt;267-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;252-&gt;232-&gt;212-&gt;213-&gt;214-&gt;215-&gt;216-&gt;217-&gt;197-&gt;177-&gt;157-&gt;137-&gt;117-&gt;118-&gt;98 
+Ground truth opened nodes: 386-&gt;366-&gt;385-&gt;387-&gt;346-&gt;388-&gt;326-&gt;345-&gt;347-&gt;306-&gt;325-&gt;327-&gt;344-&gt;348-&gt;286-&gt;307-&gt;324-&gt;343-&gt;364-&gt;349-&gt;266-&gt;285-&gt;287-&gt;308-&gt;342-&gt;329-&gt;369-&gt;246-&gt;265-&gt;267-&gt;288-&gt;322-&gt;341-&gt;362-&gt;330-&gt;226-&gt;245-&gt;247-&gt;264-&gt;268-&gt;302-&gt;321-&gt;361-&gt;382-&gt;310-&gt;225-&gt;227-&gt;244-&gt;269-&gt;282-&gt;301-&gt;381-&gt;383-&gt;290-&gt;311-&gt;205-&gt;207-&gt;228-&gt;243-&gt;249-&gt;270-&gt;262-&gt;281-&gt;283-&gt;185-&gt;204-&gt;187-&gt;208-&gt;223-&gt;242-&gt;250-&gt;271-&gt;261-&gt;165-&gt;184-&gt;186-&gt;203-&gt;167-&gt;188-&gt;209-&gt;222-&gt;241-&gt;251-&gt;272-&gt;145-&gt;164-&gt;183-&gt;202-&gt;147-&gt;168-&gt;252-&gt;125-&gt;144-&gt;146-&gt;163-&gt;182-&gt;201-&gt;148-&gt;169-&gt;232-&gt;253-&gt;105-&gt;124-&gt;126-&gt;162-&gt;128-&gt;149-&gt;212-&gt;233-&gt;85-&gt;106-&gt;142-&gt;161-&gt;108-&gt;129-&gt;150-&gt;192-&gt;211-&gt;213-&gt;234-&gt;65-&gt;84-&gt;86-&gt;107-&gt;122-&gt;141-&gt;109-&gt;151-&gt;172-&gt;214-&gt;235-&gt;64-&gt;87-&gt;102-&gt;89-&gt;110-&gt;131-&gt;171-&gt;173-&gt;194-&gt;215-&gt;255-&gt;63-&gt;67-&gt;101-&gt;90-&gt;111-&gt;216-&gt;256-&gt;275-&gt;43-&gt;62-&gt;47-&gt;68-&gt;81-&gt;70-&gt;91-&gt;112-&gt;217-&gt;276-&gt;274-&gt;295-&gt;23-&gt;42-&gt;61-&gt;27-&gt;46-&gt;48-&gt;92-&gt;113-&gt;197-&gt;218-&gt;237-&gt;277-&gt;296-&gt;294-&gt;315-&gt;3-&gt;24-&gt;41-&gt;7-&gt;26-&gt;49-&gt;72-&gt;93-&gt;114-&gt;133-&gt;177-&gt;198-&gt;219-&gt;238-&gt;278-&gt;297-&gt;316-&gt;335-&gt;2-&gt;25-&gt;21-&gt;6-&gt;8-&gt;29-&gt;73-&gt;94-&gt;134-&gt;157-&gt;178-&gt;258-&gt;298-&gt;317-&gt;336-&gt;334-&gt;355-&gt;1-&gt;5-&gt;9-&gt;30-&gt;53-&gt;74-&gt;154-&gt;137-&gt;158-&gt;259-&gt;299-&gt;337-&gt;356-&gt;333-&gt;375-&gt;10-&gt;31-&gt;33-&gt;54-&gt;155-&gt;117-&gt;138-&gt;159-&gt;260-&gt;300-&gt;319-&gt;338-&gt;357-&gt;313-&gt;332-&gt;353-&gt;374-&gt;395-&gt;32-&gt;51-&gt;13-&gt;34-&gt;55-&gt;175-&gt;116-&gt;118-&gt;160-&gt;280-&gt;320-&gt;339-&gt;358-&gt;377-&gt;373-&gt;394-&gt;396-&gt;14-&gt;35-&gt;56-&gt;96-&gt;98
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-grid02-figure3'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure3-Path1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure3-Path1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path1</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure3-GroundTruth1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure3-GroundTruth1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth1</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure3-Path1.png">Path1</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure3-GroundTruth1.png">GroundTruth1</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 43,	Goal: 344
+Student solution : CORRECT
+Your algo path: 43-&gt;42-&gt;41-&gt;61-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;162-&gt;182-&gt;202-&gt;222-&gt;242-&gt;262-&gt;282-&gt;302-&gt;322-&gt;342-&gt;343-&gt;344
+Your algo opened nodes: 43-&gt;23-&gt;42-&gt;63-&gt;3-&gt;24-&gt;41-&gt;62-&gt;64-&gt;2-&gt;25-&gt;21-&gt;61-&gt;65-&gt;84-&gt;1-&gt;5-&gt;26-&gt;81-&gt;85-&gt;6-&gt;27-&gt;46-&gt;101-&gt;86-&gt;105-&gt;7-&gt;47-&gt;102-&gt;87-&gt;106-&gt;125-&gt;8-&gt;48-&gt;67-&gt;122-&gt;107-&gt;126-&gt;124-&gt;145-&gt;9-&gt;49-&gt;68-&gt;142-&gt;108-&gt;146-&gt;144-&gt;165-&gt;10-&gt;29-&gt;141-&gt;162-&gt;109-&gt;128-&gt;147-&gt;164-&gt;185-&gt;30-&gt;161-&gt;163-&gt;182-&gt;89-&gt;110-&gt;129-&gt;148-&gt;167-&gt;184-&gt;186-&gt;205-&gt;31-&gt;183-&gt;202-&gt;90-&gt;111-&gt;149-&gt;168-&gt;187-&gt;204-&gt;225-&gt;32-&gt;51-&gt;203-&gt;201-&gt;222-&gt;70-&gt;91-&gt;112-&gt;131-&gt;150-&gt;169-&gt;188-&gt;207-&gt;226-&gt;245-&gt;33-&gt;223-&gt;242-&gt;92-&gt;113-&gt;151-&gt;208-&gt;227-&gt;246-&gt;244-&gt;265-&gt;13-&gt;34-&gt;53-&gt;243-&gt;241-&gt;262-&gt;72-&gt;93-&gt;114-&gt;133-&gt;171-&gt;209-&gt;228-&gt;247-&gt;266-&gt;264-&gt;285-&gt;14-&gt;35-&gt;54-&gt;73-&gt;261-&gt;282-&gt;94-&gt;134-&gt;172-&gt;267-&gt;286-&gt;15-&gt;55-&gt;74-&gt;281-&gt;283-&gt;302-&gt;154-&gt;173-&gt;192-&gt;268-&gt;287-&gt;306-&gt;16-&gt;56-&gt;301-&gt;322-&gt;155-&gt;212-&gt;269-&gt;288-&gt;307-&gt;326-&gt;17-&gt;76-&gt;321-&gt;342-&gt;175-&gt;211-&gt;213-&gt;232-&gt;249-&gt;270-&gt;308-&gt;327-&gt;325-&gt;346-&gt;18-&gt;37-&gt;77-&gt;96-&gt;341-&gt;343-&gt;362-&gt;214-&gt;233-&gt;252-&gt;250-&gt;271-&gt;290-&gt;347-&gt;324-&gt;345-&gt;366-&gt;19-&gt;38-&gt;78-&gt;116-&gt;361-&gt;344
+Ground truth path: 43-&gt;42-&gt;41-&gt;61-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;162-&gt;182-&gt;202-&gt;222-&gt;242-&gt;262-&gt;282-&gt;302-&gt;322-&gt;342-&gt;343-&gt;344 
+Ground truth opened nodes: 43-&gt;23-&gt;42-&gt;63-&gt;3-&gt;24-&gt;41-&gt;62-&gt;64-&gt;2-&gt;25-&gt;21-&gt;61-&gt;65-&gt;84-&gt;1-&gt;5-&gt;26-&gt;81-&gt;85-&gt;6-&gt;27-&gt;46-&gt;101-&gt;86-&gt;105-&gt;7-&gt;47-&gt;102-&gt;87-&gt;106-&gt;125-&gt;8-&gt;48-&gt;67-&gt;122-&gt;107-&gt;126-&gt;124-&gt;145-&gt;9-&gt;49-&gt;68-&gt;142-&gt;108-&gt;146-&gt;144-&gt;165-&gt;10-&gt;29-&gt;141-&gt;162-&gt;109-&gt;128-&gt;147-&gt;164-&gt;185-&gt;30-&gt;161-&gt;163-&gt;182-&gt;89-&gt;110-&gt;129-&gt;148-&gt;167-&gt;184-&gt;186-&gt;205-&gt;31-&gt;183-&gt;202-&gt;90-&gt;111-&gt;149-&gt;168-&gt;187-&gt;204-&gt;225-&gt;32-&gt;51-&gt;203-&gt;201-&gt;222-&gt;70-&gt;91-&gt;112-&gt;131-&gt;150-&gt;169-&gt;188-&gt;207-&gt;226-&gt;245-&gt;33-&gt;223-&gt;242-&gt;92-&gt;113-&gt;151-&gt;208-&gt;227-&gt;246-&gt;244-&gt;265-&gt;13-&gt;34-&gt;53-&gt;243-&gt;241-&gt;262-&gt;72-&gt;93-&gt;114-&gt;133-&gt;171-&gt;209-&gt;228-&gt;247-&gt;266-&gt;264-&gt;285-&gt;14-&gt;35-&gt;54-&gt;73-&gt;261-&gt;282-&gt;94-&gt;134-&gt;172-&gt;267-&gt;286-&gt;15-&gt;55-&gt;74-&gt;281-&gt;283-&gt;302-&gt;154-&gt;173-&gt;192-&gt;268-&gt;287-&gt;306-&gt;16-&gt;56-&gt;301-&gt;322-&gt;155-&gt;212-&gt;269-&gt;288-&gt;307-&gt;326-&gt;17-&gt;76-&gt;321-&gt;342-&gt;175-&gt;211-&gt;213-&gt;232-&gt;249-&gt;270-&gt;308-&gt;327-&gt;325-&gt;346-&gt;18-&gt;37-&gt;77-&gt;96-&gt;341-&gt;343-&gt;362-&gt;214-&gt;233-&gt;252-&gt;250-&gt;271-&gt;290-&gt;347-&gt;324-&gt;345-&gt;366-&gt;19-&gt;38-&gt;78-&gt;116-&gt;361-&gt;344
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-BreadthFirst-grid02-figure4'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure4-Path2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure4-Path2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path2</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure4-GroundTruth2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure4-GroundTruth2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth2</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure4-Path2.png">Path2</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-BreadthFirst-grid02-figure4-GroundTruth2.png">GroundTruth2</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> BreadthFirst-query2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 287,	Goal: 356
+Student solution : CORRECT
+Your algo path: 287-&gt;267-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;252-&gt;232-&gt;233-&gt;234-&gt;235-&gt;255-&gt;256-&gt;276-&gt;296-&gt;316-&gt;336-&gt;356
+Your algo opened nodes: 287-&gt;267-&gt;286-&gt;288-&gt;307-&gt;247-&gt;266-&gt;268-&gt;285-&gt;306-&gt;308-&gt;327-&gt;227-&gt;246-&gt;265-&gt;269-&gt;326-&gt;347-&gt;207-&gt;226-&gt;228-&gt;245-&gt;264-&gt;249-&gt;270-&gt;325-&gt;346-&gt;348-&gt;187-&gt;208-&gt;225-&gt;244-&gt;250-&gt;271-&gt;290-&gt;324-&gt;345-&gt;366-&gt;349-&gt;167-&gt;186-&gt;188-&gt;209-&gt;205-&gt;243-&gt;251-&gt;272-&gt;310-&gt;344-&gt;386-&gt;329-&gt;369-&gt;147-&gt;168-&gt;185-&gt;204-&gt;223-&gt;242-&gt;252-&gt;311-&gt;330-&gt;343-&gt;364-&gt;385-&gt;387-&gt;146-&gt;148-&gt;169-&gt;165-&gt;184-&gt;203-&gt;222-&gt;241-&gt;262-&gt;232-&gt;253-&gt;342-&gt;388-&gt;126-&gt;145-&gt;128-&gt;149-&gt;164-&gt;183-&gt;202-&gt;261-&gt;282-&gt;212-&gt;233-&gt;322-&gt;341-&gt;362-&gt;106-&gt;125-&gt;144-&gt;108-&gt;129-&gt;150-&gt;163-&gt;182-&gt;201-&gt;281-&gt;283-&gt;302-&gt;192-&gt;211-&gt;213-&gt;234-&gt;321-&gt;361-&gt;382-&gt;86-&gt;105-&gt;107-&gt;124-&gt;109-&gt;151-&gt;162-&gt;301-&gt;172-&gt;214-&gt;235-&gt;381-&gt;383-&gt;85-&gt;87-&gt;89-&gt;110-&gt;131-&gt;171-&gt;142-&gt;161-&gt;173-&gt;194-&gt;215-&gt;255-&gt;65-&gt;84-&gt;67-&gt;90-&gt;111-&gt;122-&gt;141-&gt;216-&gt;256-&gt;275-&gt;64-&gt;47-&gt;68-&gt;70-&gt;91-&gt;112-&gt;102-&gt;217-&gt;276-&gt;274-&gt;295-&gt;63-&gt;27-&gt;46-&gt;48-&gt;92-&gt;113-&gt;101-&gt;197-&gt;218-&gt;237-&gt;277-&gt;296-&gt;294-&gt;315-&gt;43-&gt;62-&gt;7-&gt;26-&gt;49-&gt;72-&gt;93-&gt;114-&gt;133-&gt;81-&gt;177-&gt;198-&gt;219-&gt;238-&gt;278-&gt;297-&gt;316-&gt;335-&gt;23-&gt;42-&gt;61-&gt;6-&gt;8-&gt;25-&gt;29-&gt;73-&gt;94-&gt;134-&gt;157-&gt;178-&gt;258-&gt;298-&gt;317-&gt;336-&gt;334-&gt;355-&gt;3-&gt;24-&gt;41-&gt;5-&gt;9-&gt;30-&gt;53-&gt;74-&gt;154-&gt;137-&gt;158-&gt;259-&gt;299-&gt;337-&gt;356
+Ground truth path: 287-&gt;267-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;252-&gt;232-&gt;233-&gt;234-&gt;235-&gt;255-&gt;256-&gt;276-&gt;296-&gt;316-&gt;336-&gt;356 
+Ground truth opened nodes: 287-&gt;267-&gt;286-&gt;288-&gt;307-&gt;247-&gt;266-&gt;268-&gt;285-&gt;306-&gt;308-&gt;327-&gt;227-&gt;246-&gt;265-&gt;269-&gt;326-&gt;347-&gt;207-&gt;226-&gt;228-&gt;245-&gt;264-&gt;249-&gt;270-&gt;325-&gt;346-&gt;348-&gt;187-&gt;208-&gt;225-&gt;244-&gt;250-&gt;271-&gt;290-&gt;324-&gt;345-&gt;366-&gt;349-&gt;167-&gt;186-&gt;188-&gt;209-&gt;205-&gt;243-&gt;251-&gt;272-&gt;310-&gt;344-&gt;386-&gt;329-&gt;369-&gt;147-&gt;168-&gt;185-&gt;204-&gt;223-&gt;242-&gt;252-&gt;311-&gt;330-&gt;343-&gt;364-&gt;385-&gt;387-&gt;146-&gt;148-&gt;169-&gt;165-&gt;184-&gt;203-&gt;222-&gt;241-&gt;262-&gt;232-&gt;253-&gt;342-&gt;388-&gt;126-&gt;145-&gt;128-&gt;149-&gt;164-&gt;183-&gt;202-&gt;261-&gt;282-&gt;212-&gt;233-&gt;322-&gt;341-&gt;362-&gt;106-&gt;125-&gt;144-&gt;108-&gt;129-&gt;150-&gt;163-&gt;182-&gt;201-&gt;281-&gt;283-&gt;302-&gt;192-&gt;211-&gt;213-&gt;234-&gt;321-&gt;361-&gt;382-&gt;86-&gt;105-&gt;107-&gt;124-&gt;109-&gt;151-&gt;162-&gt;301-&gt;172-&gt;214-&gt;235-&gt;381-&gt;383-&gt;85-&gt;87-&gt;89-&gt;110-&gt;131-&gt;171-&gt;142-&gt;161-&gt;173-&gt;194-&gt;215-&gt;255-&gt;65-&gt;84-&gt;67-&gt;90-&gt;111-&gt;122-&gt;141-&gt;216-&gt;256-&gt;275-&gt;64-&gt;47-&gt;68-&gt;70-&gt;91-&gt;112-&gt;102-&gt;217-&gt;276-&gt;274-&gt;295-&gt;63-&gt;27-&gt;46-&gt;48-&gt;92-&gt;113-&gt;101-&gt;197-&gt;218-&gt;237-&gt;277-&gt;296-&gt;294-&gt;315-&gt;43-&gt;62-&gt;7-&gt;26-&gt;49-&gt;72-&gt;93-&gt;114-&gt;133-&gt;81-&gt;177-&gt;198-&gt;219-&gt;238-&gt;278-&gt;297-&gt;316-&gt;335-&gt;23-&gt;42-&gt;61-&gt;6-&gt;8-&gt;25-&gt;29-&gt;73-&gt;94-&gt;134-&gt;157-&gt;178-&gt;258-&gt;298-&gt;317-&gt;336-&gt;334-&gt;355-&gt;3-&gt;24-&gt;41-&gt;5-&gt;9-&gt;30-&gt;53-&gt;74-&gt;154-&gt;137-&gt;158-&gt;259-&gt;299-&gt;337-&gt;356
+ 
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Exercise2-IterativeDeepening-grid02">
+    <h><a href="#Evaluation-Exercise2-IterativeDeepening-grid02">Exercise2-IterativeDeepening-grid02</a></h><section> 
+<div class="report-nongui-nodes">
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-grid02-figure1'>
+    <div class="report-subfigure ncols-1 first-col last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure1-Grid.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure1-Grid.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Grid</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure1-Grid.png">Grid</a>:  image/png</p>
+</div>
+</div>
+    <div class='report-node' id="Evaluation-Exercise2-IterativeDeepening-grid02-IterativeDeepening">
+    <h><a href="#Evaluation-Exercise2-IterativeDeepening-grid02-IterativeDeepening">IterativeDeepening</a></h><section> 
+</section> 
+</div> 
+<div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-grid02-figure2'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure2-Path0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure2-Path0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path0</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure2-GroundTruth0.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure2-GroundTruth0.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth0</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure2-Path0.png">Path0</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure2-GroundTruth0.png">GroundTruth0</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query0 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 386,	Goal: 98
+Student solution : CORRECT
+Your algo path: 386-&gt;366-&gt;346-&gt;326-&gt;306-&gt;286-&gt;266-&gt;267-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;252-&gt;232-&gt;212-&gt;213-&gt;214-&gt;215-&gt;216-&gt;217-&gt;197-&gt;177-&gt;157-&gt;137-&gt;117-&gt;118-&gt;98
+Your algo opened nodes: 386-&gt;366-&gt;346-&gt;326-&gt;306-&gt;286-&gt;266-&gt;246-&gt;226-&gt;225-&gt;205-&gt;185-&gt;165-&gt;145-&gt;125-&gt;105-&gt;85-&gt;65-&gt;64-&gt;63-&gt;43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;24-&gt;25-&gt;5-&gt;6-&gt;7-&gt;8-&gt;27-&gt;26-&gt;46-&gt;47-&gt;48-&gt;67-&gt;42-&gt;62-&gt;84-&gt;86-&gt;87-&gt;107-&gt;108-&gt;109-&gt;89-&gt;90-&gt;70-&gt;91-&gt;92-&gt;72-&gt;73-&gt;93-&gt;94-&gt;113-&gt;112-&gt;111-&gt;131-&gt;151-&gt;110-&gt;129-&gt;149-&gt;148-&gt;147-&gt;167-&gt;187-&gt;168-&gt;188-&gt;208-&gt;150-&gt;169-&gt;128-&gt;106-&gt;124-&gt;126-&gt;144-&gt;146-&gt;164-&gt;163-&gt;162-&gt;142-&gt;122-&gt;102-&gt;101-&gt;81-&gt;141-&gt;161-&gt;182-&gt;202-&gt;201-&gt;203-&gt;223-&gt;243-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;283-&gt;302-&gt;322-&gt;301-&gt;321-&gt;341-&gt;262-&gt;244-&gt;264-&gt;222-&gt;183-&gt;184-&gt;186-&gt;204-&gt;227-&gt;207-&gt;228-&gt;245-&gt;247-&gt;265-&gt;267-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;252-&gt;232-&gt;212-&gt;192-&gt;172-&gt;171-&gt;173-&gt;211-&gt;213-&gt;214-&gt;194-&gt;215-&gt;216-&gt;217-&gt;197-&gt;177-&gt;157-&gt;137-&gt;117-&gt;116-&gt;96-&gt;118-&gt;98
+Ground truth path: 386-&gt;366-&gt;346-&gt;326-&gt;306-&gt;286-&gt;266-&gt;267-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;252-&gt;232-&gt;212-&gt;213-&gt;214-&gt;215-&gt;216-&gt;217-&gt;197-&gt;177-&gt;157-&gt;137-&gt;117-&gt;118-&gt;98 
+Ground truth opened nodes: 386-&gt;366-&gt;346-&gt;326-&gt;306-&gt;286-&gt;266-&gt;246-&gt;226-&gt;225-&gt;205-&gt;185-&gt;165-&gt;145-&gt;125-&gt;105-&gt;85-&gt;65-&gt;64-&gt;63-&gt;43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;24-&gt;25-&gt;5-&gt;6-&gt;7-&gt;8-&gt;27-&gt;26-&gt;46-&gt;47-&gt;48-&gt;67-&gt;42-&gt;62-&gt;84-&gt;86-&gt;87-&gt;107-&gt;108-&gt;109-&gt;89-&gt;90-&gt;70-&gt;91-&gt;92-&gt;72-&gt;73-&gt;93-&gt;94-&gt;113-&gt;112-&gt;111-&gt;131-&gt;151-&gt;110-&gt;129-&gt;149-&gt;148-&gt;147-&gt;167-&gt;187-&gt;168-&gt;188-&gt;208-&gt;150-&gt;169-&gt;128-&gt;106-&gt;124-&gt;126-&gt;144-&gt;146-&gt;164-&gt;163-&gt;162-&gt;142-&gt;122-&gt;102-&gt;101-&gt;81-&gt;141-&gt;161-&gt;182-&gt;202-&gt;201-&gt;203-&gt;223-&gt;243-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;283-&gt;302-&gt;322-&gt;301-&gt;321-&gt;341-&gt;262-&gt;244-&gt;264-&gt;222-&gt;183-&gt;184-&gt;186-&gt;204-&gt;227-&gt;207-&gt;228-&gt;245-&gt;247-&gt;265-&gt;267-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;252-&gt;232-&gt;212-&gt;192-&gt;172-&gt;171-&gt;173-&gt;211-&gt;213-&gt;214-&gt;194-&gt;215-&gt;216-&gt;217-&gt;197-&gt;177-&gt;157-&gt;137-&gt;117-&gt;116-&gt;96-&gt;118-&gt;98
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-grid02-figure3'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure3-Path1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure3-Path1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path1</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure3-GroundTruth1.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure3-GroundTruth1.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth1</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure3-Path1.png">Path1</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure3-GroundTruth1.png">GroundTruth1</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 43,	Goal: 344
+Student solution : CORRECT
+Your algo path: 43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;162-&gt;182-&gt;202-&gt;222-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;302-&gt;322-&gt;342-&gt;343-&gt;344
+Your algo opened nodes: 43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;62-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;141-&gt;161-&gt;162-&gt;163-&gt;164-&gt;144-&gt;124-&gt;125-&gt;105-&gt;85-&gt;65-&gt;64-&gt;84-&gt;86-&gt;87-&gt;67-&gt;47-&gt;27-&gt;7-&gt;6-&gt;5-&gt;8-&gt;9-&gt;26-&gt;25-&gt;46-&gt;48-&gt;49-&gt;29-&gt;30-&gt;68-&gt;107-&gt;108-&gt;109-&gt;89-&gt;90-&gt;70-&gt;91-&gt;110-&gt;111-&gt;112-&gt;131-&gt;129-&gt;149-&gt;148-&gt;150-&gt;169-&gt;128-&gt;106-&gt;126-&gt;146-&gt;147-&gt;167-&gt;168-&gt;188-&gt;208-&gt;207-&gt;227-&gt;226-&gt;247-&gt;209-&gt;228-&gt;187-&gt;186-&gt;185-&gt;205-&gt;204-&gt;203-&gt;225-&gt;245-&gt;145-&gt;165-&gt;184-&gt;183-&gt;182-&gt;202-&gt;201-&gt;222-&gt;223-&gt;243-&gt;244-&gt;264-&gt;265-&gt;266-&gt;246-&gt;267-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;270-&gt;271-&gt;272-&gt;290-&gt;310-&gt;288-&gt;308-&gt;307-&gt;306-&gt;327-&gt;287-&gt;286-&gt;285-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;283-&gt;302-&gt;322-&gt;321-&gt;341-&gt;361-&gt;362-&gt;382-&gt;381-&gt;342-&gt;343-&gt;344
+Ground truth path: 43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;162-&gt;182-&gt;202-&gt;222-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;302-&gt;322-&gt;342-&gt;343-&gt;344 
+Ground truth opened nodes: 43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;21-&gt;41-&gt;61-&gt;62-&gt;81-&gt;101-&gt;102-&gt;122-&gt;142-&gt;141-&gt;161-&gt;162-&gt;163-&gt;164-&gt;144-&gt;124-&gt;125-&gt;105-&gt;85-&gt;65-&gt;64-&gt;84-&gt;86-&gt;87-&gt;67-&gt;47-&gt;27-&gt;7-&gt;6-&gt;5-&gt;8-&gt;9-&gt;26-&gt;25-&gt;46-&gt;48-&gt;49-&gt;29-&gt;30-&gt;68-&gt;107-&gt;108-&gt;109-&gt;89-&gt;90-&gt;70-&gt;91-&gt;110-&gt;111-&gt;112-&gt;131-&gt;129-&gt;149-&gt;148-&gt;150-&gt;169-&gt;128-&gt;106-&gt;126-&gt;146-&gt;147-&gt;167-&gt;168-&gt;188-&gt;208-&gt;207-&gt;227-&gt;226-&gt;247-&gt;209-&gt;228-&gt;187-&gt;186-&gt;185-&gt;205-&gt;204-&gt;203-&gt;225-&gt;245-&gt;145-&gt;165-&gt;184-&gt;183-&gt;182-&gt;202-&gt;201-&gt;222-&gt;223-&gt;243-&gt;244-&gt;264-&gt;265-&gt;266-&gt;246-&gt;267-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;270-&gt;271-&gt;272-&gt;290-&gt;310-&gt;288-&gt;308-&gt;307-&gt;306-&gt;327-&gt;287-&gt;286-&gt;285-&gt;242-&gt;241-&gt;261-&gt;281-&gt;282-&gt;283-&gt;302-&gt;322-&gt;321-&gt;341-&gt;361-&gt;362-&gt;382-&gt;381-&gt;342-&gt;343-&gt;344
+ 
+</pre>
+               </div>
+
+            </div>
+            <div style="clear:left" class='report-figure None' id='Evaluation-Exercise2-IterativeDeepening-grid02-figure4'>
+    <div class="report-subfigure ncols-2 first-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure4-Path2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure4-Path2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">Path2</p></div> <div class="report-subfigure ncols-2 last-col"> 
+                    <a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure4-GroundTruth2.png" class="zoomable">
+                        <img src="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure4-GroundTruth2.png"/>
+                    </a>
+                <p class="report-subfigure-caption">GroundTruth2</p></div> 
+
+<p class="report-figure-caption"></p><div class="report-nongui-nodes">
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure4-Path2.png">Path2</a>:  image/png</p>
+<p class="datanode"><a href="index.html_resources/Evaluation-Exercise2-IterativeDeepening-grid02-figure4-GroundTruth2.png">GroundTruth2</a>:  image/png</p>
+</div>
+</div>
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> IterativeDeepening-query2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Start: 287,	Goal: 356
+Student solution : CORRECT
+Your algo path: 287-&gt;267-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;252-&gt;232-&gt;212-&gt;213-&gt;214-&gt;215-&gt;235-&gt;255-&gt;275-&gt;295-&gt;296-&gt;316-&gt;336-&gt;356
+Your algo opened nodes: 287-&gt;267-&gt;247-&gt;227-&gt;207-&gt;187-&gt;167-&gt;147-&gt;146-&gt;126-&gt;106-&gt;86-&gt;85-&gt;65-&gt;64-&gt;63-&gt;43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;24-&gt;25-&gt;5-&gt;26-&gt;42-&gt;41-&gt;21-&gt;61-&gt;81-&gt;62-&gt;84-&gt;87-&gt;67-&gt;47-&gt;27-&gt;7-&gt;6-&gt;8-&gt;9-&gt;10-&gt;30-&gt;29-&gt;49-&gt;46-&gt;48-&gt;68-&gt;105-&gt;107-&gt;108-&gt;109-&gt;89-&gt;90-&gt;70-&gt;91-&gt;92-&gt;72-&gt;73-&gt;53-&gt;74-&gt;93-&gt;94-&gt;114-&gt;113-&gt;133-&gt;112-&gt;111-&gt;131-&gt;151-&gt;150-&gt;171-&gt;110-&gt;129-&gt;149-&gt;169-&gt;128-&gt;125-&gt;124-&gt;144-&gt;164-&gt;163-&gt;162-&gt;142-&gt;122-&gt;102-&gt;101-&gt;141-&gt;161-&gt;182-&gt;202-&gt;201-&gt;203-&gt;204-&gt;205-&gt;223-&gt;243-&gt;222-&gt;242-&gt;241-&gt;262-&gt;183-&gt;165-&gt;185-&gt;184-&gt;145-&gt;148-&gt;168-&gt;186-&gt;188-&gt;208-&gt;209-&gt;226-&gt;225-&gt;245-&gt;244-&gt;264-&gt;265-&gt;285-&gt;228-&gt;246-&gt;266-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;252-&gt;232-&gt;212-&gt;192-&gt;172-&gt;173-&gt;211-&gt;213-&gt;214-&gt;194-&gt;215-&gt;216-&gt;217-&gt;197-&gt;177-&gt;157-&gt;137-&gt;117-&gt;116-&gt;118-&gt;138-&gt;158-&gt;159-&gt;160-&gt;178-&gt;198-&gt;218-&gt;219-&gt;238-&gt;258-&gt;259-&gt;260-&gt;280-&gt;278-&gt;277-&gt;276-&gt;297-&gt;298-&gt;299-&gt;237-&gt;235-&gt;255-&gt;256-&gt;275-&gt;274-&gt;294-&gt;295-&gt;296-&gt;316-&gt;317-&gt;337-&gt;336-&gt;335-&gt;356
+Ground truth path: 287-&gt;267-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;252-&gt;232-&gt;212-&gt;213-&gt;214-&gt;215-&gt;235-&gt;255-&gt;275-&gt;295-&gt;296-&gt;316-&gt;336-&gt;356 
+Ground truth opened nodes: 287-&gt;267-&gt;247-&gt;227-&gt;207-&gt;187-&gt;167-&gt;147-&gt;146-&gt;126-&gt;106-&gt;86-&gt;85-&gt;65-&gt;64-&gt;63-&gt;43-&gt;23-&gt;3-&gt;2-&gt;1-&gt;24-&gt;25-&gt;5-&gt;26-&gt;42-&gt;41-&gt;21-&gt;61-&gt;81-&gt;62-&gt;84-&gt;87-&gt;67-&gt;47-&gt;27-&gt;7-&gt;6-&gt;8-&gt;9-&gt;10-&gt;30-&gt;29-&gt;49-&gt;46-&gt;48-&gt;68-&gt;105-&gt;107-&gt;108-&gt;109-&gt;89-&gt;90-&gt;70-&gt;91-&gt;92-&gt;72-&gt;73-&gt;53-&gt;74-&gt;93-&gt;94-&gt;114-&gt;113-&gt;133-&gt;112-&gt;111-&gt;131-&gt;151-&gt;150-&gt;171-&gt;110-&gt;129-&gt;149-&gt;169-&gt;128-&gt;125-&gt;124-&gt;144-&gt;164-&gt;163-&gt;162-&gt;142-&gt;122-&gt;102-&gt;101-&gt;141-&gt;161-&gt;182-&gt;202-&gt;201-&gt;203-&gt;204-&gt;205-&gt;223-&gt;243-&gt;222-&gt;242-&gt;241-&gt;262-&gt;183-&gt;165-&gt;185-&gt;184-&gt;145-&gt;148-&gt;168-&gt;186-&gt;188-&gt;208-&gt;209-&gt;226-&gt;225-&gt;245-&gt;244-&gt;264-&gt;265-&gt;285-&gt;228-&gt;246-&gt;266-&gt;268-&gt;269-&gt;249-&gt;250-&gt;251-&gt;252-&gt;232-&gt;212-&gt;192-&gt;172-&gt;173-&gt;211-&gt;213-&gt;214-&gt;194-&gt;215-&gt;216-&gt;217-&gt;197-&gt;177-&gt;157-&gt;137-&gt;117-&gt;116-&gt;118-&gt;138-&gt;158-&gt;159-&gt;160-&gt;178-&gt;198-&gt;218-&gt;219-&gt;238-&gt;258-&gt;259-&gt;260-&gt;280-&gt;278-&gt;277-&gt;276-&gt;297-&gt;298-&gt;299-&gt;237-&gt;235-&gt;255-&gt;256-&gt;275-&gt;274-&gt;294-&gt;295-&gt;296-&gt;316-&gt;317-&gt;337-&gt;336-&gt;335-&gt;356
+ 
+</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+</div>
+</section> 
+</div> 
+
+
+
+
+</body>
+</html>

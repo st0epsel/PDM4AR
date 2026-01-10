@@ -1,0 +1,329 @@
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript"
+        src="index.html_resources/static/jquery/jquery.js"></script>
+
+    <!-- Use imagezoom plugin -->
+    <script type="text/javascript"
+        src="index.html_resources/static/jquery/jquery.imageZoom.js"></script>
+    <link rel="stylesheet"
+          href="index.html_resources/static/jquery/jquery.imageZoom.css"/>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('.zoomable').imageZoom();
+        });
+    </script>
+
+
+    <!-- Use tablesorter plugin -->
+    <script type="text/javascript"
+            src="index.html_resources/static/jquery/tablesorter/jquery.tablesorter.js"></script>
+    <link rel="stylesheet"
+          href="index.html_resources/static/jquery/tablesorter/themes/blue/style.css"/>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".tablesorter").tablesorter();
+    }
+    );
+    </script>
+    
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: {
+            equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"]
+        },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/SVG"], //" "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$']],
+          displayMath: [ ['$$','$$'] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+      //MathJax.Ajax.loadComplete("/media/tex/symbols.js");
+    </script>
+
+    <script type='text/javascript'
+            src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+
+
+
+    <style type="text/css">
+    /* Extra CSS passed by user. */
+        
+    </style>
+
+
+    <link rel="stylesheet"
+          href="index.html_resources/static/reprep/default_style.css"/>
+
+    <title> Evaluation </title>
+<body>
+
+<p id="reprep-head">
+    Report created on 2026-01-09-18:33:03
+    by <a href="http://purl.org/censi/2010/RepRep">RepRep</a>.
+    Show:
+    <input type="submit" name="datanode_toggle"
+           value="data nodes" id="datanode_toggle" />
+</p>
+
+
+
+<script type="text/javascript">
+ $(document).ready(function() {
+   $('.datanode').hide();
+   $('#datanode_toggle').click(function(){
+     $('.datanode').toggle();
+   });
+ });
+</script>
+
+
+
+    <div class='report-node' id="Evaluation">
+    <h><a href="#Evaluation">Evaluation</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> Evaluated </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">Test cases completion ratio:
+	(3/3)</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> OverallPerformance </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">AggregatedPerformanceRes(n_test_cases=3,
+                         n_completed_test_cases=3,
+                         exceptions=[],
+                         failed_test_id=[],
+                         perf_res={&apos;c_generic_6&apos;: 333.7,
+                                   &apos;config_1&apos;: 684.6,
+                                   &apos;config_3&apos;: 1374.2})</pre>
+               </div>
+
+            </div>
+            
+    <div class='report-node' id="Evaluation-Final25-config_1">
+    <h><a href="#Evaluation-Final25-config_1">Final25-config_1</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> EpisodeEvaluation: </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">EpisodeOutcome(
+	num_collided_players=	    0,
+	num_goals_delivered =	    5,
+	total_travelled_distance=	66.39,
+	max_sim_time        =	60.00,
+	task_accomplishment_time=	37.55,
+	total_actuation_effort=	665.98,
+	avg_computation_time=	 0.00,
+	global_planning_time=	 2.41,
+
+)</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> OverallScore:  </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">684.64</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> AgentScore-PDM4AR_1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">PlayerMetrics(player_name=&apos;PDM4AR_1&apos;,
+              collided=False,
+              num_goal_delivered=5,
+              travelled_distance=66.3909109145659,
+              actuation_effort=665.976150778303,
+              avg_computation_time=0.0006954143936202351)</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Final25-config_3">
+    <h><a href="#Evaluation-Final25-config_3">Final25-config_3</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> EpisodeEvaluation: </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">EpisodeOutcome(
+	num_collided_players=	    0,
+	num_goals_delivered =	   12,
+	total_travelled_distance=	157.24,
+	max_sim_time        =	60.00,
+	task_accomplishment_time=	33.12,
+	total_actuation_effort=	1596.63,
+	avg_computation_time=	 0.00,
+	global_planning_time=	 2.51,
+
+)</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> OverallScore:  </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">1374.22</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> AgentScore-PDM4AR_1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">PlayerMetrics(player_name=&apos;PDM4AR_1&apos;,
+              collided=False,
+              num_goal_delivered=4,
+              travelled_distance=54.168474635874816,
+              actuation_effort=550.5909705992642,
+              avg_computation_time=0.003810070557226043)</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> AgentScore-PDM4AR_2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">PlayerMetrics(player_name=&apos;PDM4AR_2&apos;,
+              collided=False,
+              num_goal_delivered=4,
+              travelled_distance=51.74206074822454,
+              actuation_effort=527.9117053273163,
+              avg_computation_time=0.002167038433743714)</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> AgentScore-PDM4AR_3 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">PlayerMetrics(player_name=&apos;PDM4AR_3&apos;,
+              collided=False,
+              num_goal_delivered=4,
+              travelled_distance=51.32547680717203,
+              actuation_effort=518.1309032348671,
+              avg_computation_time=0.0027427677861374743)</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+
+    <div class='report-node' id="Evaluation-Final25-c_generic_6">
+    <h><a href="#Evaluation-Final25-c_generic_6">Final25-c_generic_6</a></h><section> 
+<div class="report-nongui-nodes">
+
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> EpisodeEvaluation: </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">EpisodeOutcome(
+	num_collided_players=	    0,
+	num_goals_delivered =	    3,
+	total_travelled_distance=	132.70,
+	max_sim_time        =	60.00,
+	task_accomplishment_time=	48.65,
+	total_actuation_effort=	1346.53,
+	avg_computation_time=	 0.00,
+	global_planning_time=	 2.23,
+
+)</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> OverallScore:  </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">333.69</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> AgentScore-PDM4AR_1 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">PlayerMetrics(player_name=&apos;PDM4AR_1&apos;,
+              collided=False,
+              num_goal_delivered=2,
+              travelled_distance=86.27909808858125,
+              actuation_effort=872.7221346533523,
+              avg_computation_time=0.0017325991560591407)</pre>
+               </div>
+
+            </div>
+            
+            <div class="textnode report-text-node">
+
+                <span class="textid report-text-node-id"> AgentScore-PDM4AR_2 </span>
+
+               <div class="report-text-node-content">
+                 <pre class="report-text report-text-plain">PlayerMetrics(player_name=&apos;PDM4AR_2&apos;,
+              collided=False,
+              num_goal_delivered=1,
+              travelled_distance=46.41921489943062,
+              actuation_effort=473.80934759450747,
+              avg_computation_time=0.0015733661519486623)</pre>
+               </div>
+
+            </div>
+            </div>
+</section> 
+</div> 
+</div>
+</section> 
+</div> 
+
+
+
+
+</body>
+</html>
