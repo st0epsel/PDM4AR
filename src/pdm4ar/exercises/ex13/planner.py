@@ -374,7 +374,7 @@ class SatellitePlanner:
                 linear_total = cost_time + cost_nu_linear + cost_goal + cost_obs_linear
 
                 # --- NONLINEAR COSTS (For Actual Reduction) ---
-                # 1. Integrate dynamics (You already had this)
+                # 1. Integrate dynamics
                 X_int = self.integrator.integrate_nonlinear_piecewise(X_new, U_new, p_new)
                 cost_nu_nonlinear = self.params.lambda_nu * np.sum(np.abs(X_new - X_int))
                 cost_obs_nonlinear = self._get_true_obstacle_cost(X_new, p_new[0])

@@ -4,11 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "b890a6d2d4bcfc13",
+        "id": "5ab3adb3db51fea5",
         "type": "tabs",
         "children": [
           {
-            "id": "77427ab798c94f12",
+            "id": "921ce4473b0a72fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/13-satellite_docking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "13-satellite_docking"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c6f164db8a6b1e37",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a332760e9f8d6695",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "07c60de5a23fa442",
@@ -183,8 +204,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "77427ab798c94f12",
+  "active": "a332760e9f8d6695",
   "lastOpenFiles": [
+    "docs/13-satellite_docking.md",
+    "README.md",
+    "docs/05-dubinspath.md",
+    "docs/04-dynamicprogramming.md",
+    "docs/03-informedgraphsearch.md",
+    "docs/02-graphsearch.md",
     "out/14/index.html_resources/PDM4AR_2_time_4.0_continue.png",
     "out/14/index.html_resources/PDM4AR_1_time_4.0_continue.png",
     "out/14/index.html_resources/PDM4AR_2_time_24.0_continue.png",
@@ -202,7 +229,6 @@
     "out/13/index.html_resources/IGs/8.png",
     "out/13/index.html_resources/IGs/4.png",
     "out/13/index.html_resources/IGs/32.png",
-    "out/13/index.html_resources/IGs/31.png",
-    "out/13/index.html_resources/IGs/30.png"
+    "out/13/index.html_resources/IGs/31.png"
   ]
 }
