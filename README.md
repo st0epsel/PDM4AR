@@ -63,6 +63,7 @@ In the following are the results of my algorithm. More details on the performanc
 #### Value iteration
 
 <table width="100%"> <tr> <td width="50%" align="center"> <img src="out/04/index.html_resources/Evaluation-Ex4-ValueIteration1-figure1-ValueIteration1-value.png" style="width:100%;"> <p>Value function</p> </td> <td width="50%" align="center"> <img src="out/04/index.html_resources/Evaluation-Ex4-ValueIteration1-figure1-ValueIteration1-policy.png" style="width:100%;"> <p>Policy function</p> </td> </tr> </table>
+
 #### Policy Iteration
 
 <table width="100%"> <tr> <td width="50%" align="center"> <img src="out/04/index.html_resources/Evaluation-Ex4-PolicyIteration1-figure1-PolicyIteration1-value.png" style="width:100%;"> <p>Value function</p> </td> <td width="50%" align="center"> <img src="out/04/index.html_resources/Evaluation-Ex4-PolicyIteration1-figure1-PolicyIteration1-policy.png" style="width:100%;"> <p>Policy function</p> </td> </tr> </table>
